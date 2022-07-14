@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/about_layout"
+    style="@style/LayoutTheme_level_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AboutActivity">
+
+    <include
+        android:id="@+id/about_include"
+        layout="@layout/layout_toolbar_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/about_vgl_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/about_vgl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/about_vgl_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.29" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/about_hgl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/about_hgl_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/about_hgl_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.19" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/about_hgl_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/about_hgl_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.21" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/about_hgl_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/about_hgl_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.46" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/about_hgl_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.49" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/about_hgl_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/about_hgl_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/about_hgl_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82" />
+
+    <ImageView
+        android:id="@+id/about_iv_appImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/about_hgl_3"
+        app:layout_constraintEnd_toStartOf="@+id/about_vgl_3"
+        app:layout_constraintStart_toStartOf="@+id/about_vgl_1"
+        app:layout_constraintTop_toTopOf="@+id/about_hgl_2"
+        app:srcCompat="@drawable/ic_applogo_round" />
+
+    <TextView
+        android:id="@+id/about_tv_appName"
+        style="@style/TextViewThemeLeftBlackBold"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/app_name"
+        android:textColor="@color/app_primary_color"
+        app:layout_constraintBottom_toTopOf="@+id/about_hgl_4"
+        app:layout_constraintEnd_toStartOf="@+id/about_vgl_2"
+        app:layout_constraintStart_toStartOf="@+id/about_vgl_3"
+        app:layout_constraintTop_toTopOf="@+id/about_hgl_2" />
+
+    <TextView
+        android:id="@+id/about_tv_appVersion"
+        style="@style/TextViewThemeLeftBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/app_primary_color"
+        app:layout_constraintBottom_toTopOf="@+id/about_hgl_3"
+        app:layout_constraintEnd_toStartOf="@+id/about_vgl_2"
+        app:layout_constraintStart_toStartOf="@+id/about_vgl_3"
+        app:layout_constraintTop_toTopOf="@+id/about_hgl_4" />
+
+    <TextView
+        android:id="@+id/about_tv_about_1"
+        style="@style/TextViewThemeCenterBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/about_tv_about_1_Label"
+        app:layout_constraintBottom_toTopOf="@+id/about_hgl_1"
+        app:layout_constraintEnd_toStartOf="@+id/about_vgl_2"
+        app:layout_constraintStart_toStartOf="@+id/about_vgl_1"
+        app:layout_constraintTop_toTopOf="@+id/about_hgl_5" />
+
+    <TextView
+        android:id="@+id/about_tv_about_2"
+        style="@style/TextViewThemeCenterBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/about_tv_about_2_Label"
+        app:layout_constraintBottom_toTopOf="@+id/about_hgl_7"
+        app:layout_constraintEnd_toStartOf="@+id/about_vgl_2"
+        app:layout_constraintStart_toStartOf="@+id/about_vgl_1"
+        app:layout_constraintTop_toTopOf="@+id/about_hgl_6" />
+
+    <TextView
+        android:id="@+id/about_tv_about_3"
+        style="@style/TextViewThemeCenterBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/about_tv_about_3_Label"
+        app:layout_constraintBottom_toTopOf="@+id/about_hgl_9"
+        app:layout_constraintEnd_toStartOf="@+id/about_vgl_2"
+        app:layout_constraintStart_toStartOf="@+id/about_vgl_1"
+        app:layout_constraintTop_toTopOf="@+id/about_hgl_8" />
+
+    <TextView
+        android:id="@+id/about_tv_about_4"
+        style="@style/TextViewThemeCenterBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/about_tv_about_4_Label"
+        app:layout_constraintBottom_toTopOf="@+id/about_hgl_11"
+        app:layout_constraintEnd_toStartOf="@+id/about_vgl_2"
+        app:layout_constraintStart_toStartOf="@+id/about_vgl_1"
+        app:layout_constraintTop_toTopOf="@+id/about_hgl_10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

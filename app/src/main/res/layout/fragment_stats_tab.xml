@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/statsFragment_frameLayout"
+    style="@style/LayoutTheme_level_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.StatsTabFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/statsFragment_cardView"
+        style="@style/MyCardViewTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/statsFragment_constraintLayout"
+            style="@style/LayoutTheme_level_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/statsFragment_tv_title"
+                style="@style/TextViewThemeCenterBlackBold"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/statsFragment_tv_titleLabel"
+                app:layout_constraintBottom_toTopOf="@+id/statsFragment_hgl_2"
+                app:layout_constraintEnd_toStartOf="@+id/statsFragment_vgl_5"
+                app:layout_constraintStart_toStartOf="@+id/statsFragment_vgl_1"
+                app:layout_constraintTop_toTopOf="@+id/statsFragment_hgl_1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/statsFragment_hgl_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="10dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/statsFragment_hgl_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="50dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/statsFragment_vgl_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.04" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/statsFragment_vgl_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.96" />
+
+            <Button
+                android:id="@+id/statsFragment_btn_dateRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/statsFragment_btn_dateRangeLabel"
+                app:layout_constraintBottom_toTopOf="@+id/statsFragment_hgl_3"
+                app:layout_constraintEnd_toStartOf="@+id/statsFragment_vgl_5"
+                app:layout_constraintStart_toStartOf="@+id/statsFragment_vgl_1"
+                app:layout_constraintTop_toTopOf="@+id/statsFragment_hgl_2" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/statsFragment_vgl_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.3" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/statsFragment_vgl_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.63" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/statsFragment_hgl_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="116dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/statsFragment_hgl_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="172dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/statsFragment_hgl_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="228dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/statsFragment_hgl_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="284dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/statsFragment_hgl_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="340dp" />
+
+            <TextView
+                android:id="@+id/statsFragment_tv_dailyAvg"
+                style="@style/TextViewThemeCenterBlack"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="5dp"
+                android:text="@string/statsFragment_tv_dailyAvgLabel"
+                app:layout_constraintBottom_toTopOf="@+id/statsFragment_hgl_5"
+                app:layout_constraintEnd_toStartOf="@+id/statsFragment_vgl_3"
+                app:layout_constraintStart_toStartOf="@+id/statsFragment_vgl_1"
+                app:layout_constraintTop_toTopOf="@+id/statsFragment_hgl_4" />
+
+            <TextView
+                android:id="@+id/statsFragment_tv_weeklyAvg"
+                style="@style/TextViewThemeCenterBlack"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="5dp"
+                android:text="@string/statsFragment_tv_weeklyAvgLabel"
+                app:layout_constraintBottom_toTopOf="@+id/statsFragment_hgl_6"
+                app:layout_constraintEnd_toStartOf="@+id/statsFragment_vgl_3"
+                app:layout_constraintStart_toStartOf="@+id/statsFragment_vgl_1"
+                app:layout_constraintTop_toTopOf="@+id/statsFragment_hgl_5" />
+
+            <TextView
+                android:id="@+id/statsFragment_tv_monthlyAvg"
+                style="@style/TextViewThemeCenterBlack"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="5dp"
+                android:text="@string/statsFragment_tv_monthlyAvgLabel"
+                app:layout_constraintBottom_toTopOf="@+id/statsFragment_hgl_7"
+                app:layout_constraintEnd_toStartOf="@+id/statsFragment_vgl_3"
+                app:layout_constraintStart_toStartOf="@+id/statsFragment_vgl_1"
+                app:layout_constraintTop_toTopOf="@+id/statsFragment_hgl_6" />
+
+            <TextView
+                android:id="@+id/statsFragment_tv_incomeTitle"
+                style="@style/TextViewThemeCenterBlackBold"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:text="@string/statsFragment_tv_incomeTitleLabel"
+                android:textColor="@color/lime_green"
+                app:layout_constraintBottom_toTopOf="@+id/statsFragment_hgl_4"
+                app:layout_constraintEnd_toStartOf="@+id/statsFragment_vgl_4"
+                app:layout_constraintStart_toStartOf="@+id/statsFragment_vgl_3"
+                app:layout_constraintTop_toTopOf="@+id/statsFragment_hgl_3" />
+
+            <TextView
+                android:id="@+id/statsFragment_tv_avgDailyIncomeTitle"
+                style="@style/TextViewThemeCenterBlackBold"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:textColor="@color/lime_green"
+                app:layout_constraintBottom_toTopOf="@+id/statsFragment_hgl_5"
+                app:layout_constraintEnd_toStartOf="@+id/statsFragment_vgl_4"
+                app:layout_constraintStart_toStartOf="@+id/statsFragment_vgl_3"
+                app:layout_constraintTop_toTopOf="@+id/statsFragment_hgl_4" />
+
+            <TextView
+                android:id="@+id/statsFragment_tv_avgWeeklyIncomeTitle"
+                style="@style/TextViewThemeCenterBlackBold"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:textColor="@color/lime_green"
+                app:layout_constraintBottom_toTopOf="@+id/statsFragment_hgl_6"
+                app:layout_constraintEnd_toStartOf="@+id/statsFragment_vgl_4"
+                app:layout_constraintStart_toStartOf="@+id/statsFragment_vgl_3"
+                app:layout_constraintTop_toTopOf="@+id/statsFragment_hgl_5" />
+
+            <TextView
+                android:id="@+id/statsFragment_tv_avgMonthlyIncomeTitle"
+                style="@style/TextViewThemeCenterBlackBold"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:textColor="@color/lime_green"
+                app:layout_constraintBottom_toTopOf="@+id/statsFragment_hgl_7"
+                app:layout_constraintEnd_toStartOf="@+id/statsFragment_vgl_4"
+                app:layout_constraintStart_toStartOf="@+id/statsFragment_vgl_3"
+                app:layout_constraintTop_toTopOf="@+id/statsFragment_hgl_6" />
+
+            <TextView
+                android:id="@+id/statsFragment_tv_expenseTitle"
+                style="@style/TextViewThemeCenterBlackBold"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:text="@string/statsFragment_tv_expenseTitleLabel"
+                android:textColor="@color/red"
+                app:layout_constraintBottom_toTopOf="@+id/statsFragment_hgl_4"
+                app:layout_constraintEnd_toStartOf="@+id/statsFragment_vgl_5"
+                app:layout_constraintStart_toStartOf="@+id/statsFragment_vgl_4"
+                app:layout_constraintTop_toTopOf="@+id/statsFragment_hgl_3" />
+
+            <TextView
+                android:id="@+id/statsFragment_tv_avgDailyExpenseTitle"
+                style="@style/TextViewThemeCenterBlackBold"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:textColor="@color/red"
+                app:layout_constraintBottom_toTopOf="@+id/statsFragment_hgl_5"
+                app:layout_constraintEnd_toStartOf="@+id/statsFragment_vgl_5"
+                app:layout_constraintStart_toStartOf="@+id/statsFragment_vgl_4"
+                app:layout_constraintTop_toTopOf="@+id/statsFragment_hgl_4" />
+
+            <TextView
+                android:id="@+id/statsFragment_tv_avgWeeklyExpenseTitle"
+                style="@style/TextViewThemeCenterBlackBold"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:textColor="@color/red"
+                app:layout_constraintBottom_toTopOf="@+id/statsFragment_hgl_6"
+                app:layout_constraintEnd_toStartOf="@+id/statsFragment_vgl_5"
+                app:layout_constraintStart_toStartOf="@+id/statsFragment_vgl_4"
+                app:layout_constraintTop_toTopOf="@+id/statsFragment_hgl_5" />
+
+            <TextView
+                android:id="@+id/statsFragment_tv_avgMonthlyExpenseTitle"
+                style="@style/TextViewThemeCenterBlackBold"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:textColor="@color/red"
+                app:layout_constraintBottom_toTopOf="@+id/statsFragment_hgl_7"
+                app:layout_constraintEnd_toStartOf="@+id/statsFragment_vgl_5"
+                app:layout_constraintStart_toStartOf="@+id/statsFragment_vgl_4"
+                app:layout_constraintTop_toTopOf="@+id/statsFragment_hgl_6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

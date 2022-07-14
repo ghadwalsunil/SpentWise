@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addEntryLayout"
+    style="@style/LayoutTheme_level_0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".activities.ManageEntryActivity">
+
+    <include
+        android:id="@+id/manageEntry_include"
+        layout="@layout/layout_toolbar_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addEntry_btn_setDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/addEntry_btn_setDateLabel"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/manageEntry_HorizontalGuideline_5"
+        app:layout_constraintEnd_toStartOf="@+id/manageEntry_VerticalGuideline_3"
+        app:layout_constraintStart_toStartOf="@+id/manageEntry_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/manageEntry_HorizontalGuideline_4" />
+
+    <EditText
+        android:id="@+id/addEntry_edt_addComment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/util_textbox_background_type_2_enabled"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="@string/addEntry_edt_addCommentHintLabel"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:isScrollContainer="true"
+        android:maxLength="250"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/manageEntry_HorizontalGuideline_11"
+        app:layout_constraintEnd_toStartOf="@+id/manageEntry_VerticalGuideline_3"
+        app:layout_constraintStart_toStartOf="@+id/manageEntry_VerticalGuideline_1"
+        app:layout_constraintTop_toBottomOf="@+id/manageEntry_tv_numOfRepeatEntries" />
+
+    <Button
+        android:id="@+id/addEntry_btn_Submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/addEntry_btn_submitEntry"
+        app:layout_constraintBottom_toTopOf="@+id/manageEntry_HorizontalGuideline_12"
+        app:layout_constraintEnd_toStartOf="@+id/manageEntry_VerticalGuideline_2"
+        app:layout_constraintStart_toStartOf="@+id/manageEntry_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/manageEntry_HorizontalGuideline_11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/manageEntry_HorizontalGuideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/manageEntry_HorizontalGuideline_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.23" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/manageEntry_HorizontalGuideline_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.31" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/manageEntry_HorizontalGuideline_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/manageEntry_HorizontalGuideline_9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.54" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/manageEntry_HorizontalGuideline_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/manageEntry_HorizontalGuideline_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.91" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/manageEntry_HorizontalGuideline_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.61" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/manageEntry_HorizontalGuideline_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/manageEntry_VerticalGuideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/manageEntry_VerticalGuideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/manageEntry_VerticalGuideline_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/manageEntry_VerticalGuideline_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/manageEntry_VerticalGuideline_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <CheckBox
+        android:id="@+id/manageEntry_chkbx_repeat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/manageEntry_chkBx_repeatLabel"
+        app:layout_constraintBottom_toTopOf="@+id/manageEntry_HorizontalGuideline_14"
+        app:layout_constraintEnd_toStartOf="@+id/manageEntry_VerticalGuideline_2"
+        app:layout_constraintStart_toStartOf="@+id/manageEntry_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/manageEntry_HorizontalGuideline_9" />
+
+    <Button
+        android:id="@+id/manageEntry_btn_repeat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/manageEntry_btn_repeatLabel"
+        app:layout_constraintBottom_toTopOf="@+id/manageEntry_HorizontalGuideline_14"
+        app:layout_constraintEnd_toStartOf="@+id/manageEntry_VerticalGuideline_3"
+        app:layout_constraintStart_toStartOf="@+id/manageEntry_VerticalGuideline_2"
+        app:layout_constraintTop_toTopOf="@+id/manageEntry_HorizontalGuideline_9" />
+
+    <TextView
+        android:id="@+id/manageEntry_tv_numOfRepeatEntries"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/manageEntry_VerticalGuideline_3"
+        app:layout_constraintStart_toStartOf="@+id/manageEntry_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/manageEntry_HorizontalGuideline_14" />
+
+    <TextView
+        android:id="@+id/manageEntry_tv_contactName"
+        style="@style/TextViewThemeLeftBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/manageEntry_HorizontalGuideline_2"
+        app:layout_constraintEnd_toStartOf="@+id/manageEntry_VerticalGuideline_3"
+        app:layout_constraintStart_toStartOf="@+id/manageEntry_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/manageEntry_HorizontalGuideline_15" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/manageEntry_til_enterAmount"
+        style="@style/MyTextInputLayoutTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/addNewEntry_tv_setAmountLabel"
+        app:layout_constraintBottom_toTopOf="@+id/manageEntry_HorizontalGuideline_4"
+        app:layout_constraintEnd_toStartOf="@+id/manageEntry_VerticalGuideline_3"
+        app:layout_constraintStart_toStartOf="@+id/manageEntry_VerticalGuideline_5"
+        app:layout_constraintTop_toTopOf="@+id/manageEntry_HorizontalGuideline_2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/manageEntry_edt_enterAmount"
+            style="@style/TextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/addEntry_edt_enterAmountLabel"
+            android:inputType="number"
+            android:maxLength="9" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/manageEntry_btn_changeCurrency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/manageEntry_HorizontalGuideline_4"
+        app:layout_constraintEnd_toStartOf="@+id/manageEntry_VerticalGuideline_5"
+        app:layout_constraintStart_toStartOf="@+id/manageEntry_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/manageEntry_HorizontalGuideline_2" />
+
+    <ProgressBar
+        android:id="@+id/manageEntry_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/manageEntry_til_transactionType"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/addEntry_tv_selectTransactionTypeLabel"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/manageEntry_HorizontalGuideline_9"
+        app:layout_constraintEnd_toStartOf="@+id/manageEntry_VerticalGuideline_3"
+        app:layout_constraintStart_toStartOf="@+id/manageEntry_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/manageEntry_HorizontalGuideline_7">
+
+        <AutoCompleteTextView
+            android:id="@+id/manageEntry_atv_transactionType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            android:text="@string/addEntry_tv_selectTransactionTypeLabel" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/manageEntry_til_transactionMode"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/addEntry_tv_selectTransactionModeLabel"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/manageEntry_HorizontalGuideline_7"
+        app:layout_constraintEnd_toStartOf="@+id/manageEntry_VerticalGuideline_3"
+        app:layout_constraintStart_toStartOf="@+id/manageEntry_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/manageEntry_HorizontalGuideline_5">
+
+        <AutoCompleteTextView
+            android:id="@+id/manageEntry_atv_transactionMode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            android:text="@string/addEntry_tv_selectTransactionModeLabel" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

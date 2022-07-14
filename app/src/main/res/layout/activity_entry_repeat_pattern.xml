@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/entryRepeatPattern_externalLayout"
+    style="@style/LayoutTheme_level_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EntryRepeatPatternActivity">
+
+    <include
+        android:id="@+id/entryFilter_include"
+        layout="@layout/layout_toolbar_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/entryRepeatPattern_til"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/entryRepeatPattern_til_HintLabel"
+        app:hintEnabled="true"
+        app:layout_constraintEnd_toStartOf="@+id/entryRepeatPattern_VerticalGuideline_2"
+        app:layout_constraintStart_toStartOf="@+id/entryRepeatPattern_VerticalGuideline_1"
+        app:layout_constraintTop_toBottomOf="@+id/entryFilter_include">
+
+        <AutoCompleteTextView
+            android:id="@+id/entryRepeatPattern_atv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:text="@string/entryRepeatPattern_atv_Default" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/entryRepeatPattern_cardView"
+        style="@style/MyCardViewTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryRepeatPattern_til" >
+
+        <FrameLayout
+            android:id="@+id/entryRepeatPattern_internalLayout_1"
+            style="@style/LayoutTheme_level_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/entryRepeatPattern_cardView_1"
+        style="@style/MyCardViewTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryRepeatPattern_cardView" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/entryRepeatPattern_internalLayout_2"
+            style="@style/LayoutTheme_level_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/entryRepeatPattern_rBtn_repeatEndAfterTimes"
+                style="@style/RadioButtonTheme"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/entryRepeatPattern_rBtn_repeatEndAfterTimesLabel"
+                app:layout_constraintBottom_toTopOf="@+id/entryRepeatPattern_HorizontalGuideline_4"
+                app:layout_constraintEnd_toStartOf="@+id/entryRepeatPattern_VerticalGuideline_6"
+                app:layout_constraintStart_toStartOf="@+id/entryRepeatPattern_VerticalGuideline_5"
+                app:layout_constraintTop_toTopOf="@+id/entryRepeatPattern_HorizontalGuideline_3" />
+
+            <TextView
+                android:id="@+id/entryRepeatPattern_tv_endAfterEntries"
+                style="@style/TextViewThemeLeftBlack"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/entryRepeatPattern_tv_endAfterEntriesLabel"
+                app:layout_constraintBottom_toTopOf="@+id/entryRepeatPattern_HorizontalGuideline_4"
+                app:layout_constraintEnd_toStartOf="@+id/entryRepeatPattern_VerticalGuideline_8"
+                app:layout_constraintStart_toEndOf="@+id/entryRepeatPattern_edt_endAfterEntries"
+                app:layout_constraintTop_toTopOf="@+id/entryRepeatPattern_HorizontalGuideline_3" />
+
+            <RadioButton
+                android:id="@+id/entryRepeatPattern_rBtn_repeatEndByDate"
+                style="@style/RadioButtonTheme"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/entryRepeatPattern_rBtn_repeatEndByDateLabel"
+                app:layout_constraintBottom_toTopOf="@+id/entryRepeatPattern_HorizontalGuideline_2"
+                app:layout_constraintEnd_toStartOf="@+id/entryRepeatPattern_VerticalGuideline_9"
+                app:layout_constraintStart_toStartOf="@+id/entryRepeatPattern_VerticalGuideline_5"
+                app:layout_constraintTop_toTopOf="@+id/entryRepeatPattern_HorizontalGuideline_1" />
+
+            <Button
+                android:id="@+id/entryRepeatPattern_btn_setEndByDate"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/entryRepeatPattern_btn_setEndByDateLabel"
+                app:layout_constraintBottom_toTopOf="@+id/entryRepeatPattern_HorizontalGuideline_2"
+                app:layout_constraintEnd_toStartOf="@+id/entryRepeatPattern_VerticalGuideline_8"
+                app:layout_constraintStart_toStartOf="@+id/entryRepeatPattern_VerticalGuideline_9"
+                app:layout_constraintTop_toTopOf="@+id/entryRepeatPattern_HorizontalGuideline_1" />
+
+            <EditText
+                android:id="@+id/entryRepeatPattern_edt_endAfterEntries"
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"
+                android:maxLength="3"
+                app:layout_constraintBottom_toTopOf="@+id/entryRepeatPattern_HorizontalGuideline_4"
+                app:layout_constraintEnd_toStartOf="@+id/entryRepeatPattern_VerticalGuideline_7"
+                app:layout_constraintStart_toStartOf="@+id/entryRepeatPattern_VerticalGuideline_6"
+                app:layout_constraintTop_toTopOf="@+id/entryRepeatPattern_HorizontalGuideline_3" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/entryRepeatPattern_VerticalGuideline_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.04" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/entryRepeatPattern_VerticalGuideline_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.47" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/entryRepeatPattern_VerticalGuideline_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.67" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/entryRepeatPattern_VerticalGuideline_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.96" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/entryRepeatPattern_VerticalGuideline_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.38" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/entryRepeatPattern_HorizontalGuideline_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="10dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/entryRepeatPattern_HorizontalGuideline_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="60dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/entryRepeatPattern_HorizontalGuideline_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="70dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/entryRepeatPattern_HorizontalGuideline_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="130dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/entryRepeatPattern_btn_savePattern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/entryRepeatPattern_btn_savePatternLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryRepeatPattern_cardView_1" />
+
+    <Button
+        android:id="@+id/entryRepeatPattern_btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/entryRepeatPattern_btn_cancelLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryRepeatPattern_cardView_1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/entryRepeatPattern_VerticalGuideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/entryRepeatPattern_VerticalGuideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/entryRepeatPattern_VerticalGuideline_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

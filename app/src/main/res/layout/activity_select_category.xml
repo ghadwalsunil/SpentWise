@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/selectCategoryLayout"
+    style="@style/LayoutTheme_level_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SelectCategoryActivity">
+
+    <include
+        android:id="@+id/selectCategory_include"
+        layout="@layout/layout_toolbar_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/selectCategory_rv_categoryGrid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/selectCategory_HorizontalGuideLine_3"
+        app:layout_constraintEnd_toStartOf="@+id/selectCategory_VerticalGuideLine_3"
+        app:layout_constraintStart_toStartOf="@+id/selectCategory_VerticalGuideLine_2"
+        app:layout_constraintTop_toTopOf="@+id/selectCategory_HorizontalGuideLine_2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectCategory_HorizontalGuideLine_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectCategory_HorizontalGuideLine_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectCategory_HorizontalGuideLine_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectCategory_HorizontalGuideLine_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectCategory_HorizontalGuideLine_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectCategory_HorizontalGuideLine_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectCategory_VerticalGuideLine_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectCategory_VerticalGuideLine_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectCategory_VerticalGuideLine_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/selectCategory_bottomNavBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/sea_green"
+        app:itemIconTint="@color/navbar_color_selector"
+        app:itemTextColor="@color/navbar_color_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/main_bottom_nav_menu" />
+
+    <Button
+        android:id="@+id/selectCategory_btn_moneyLentCategory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/selectCategory_btn_moneyLentCategoryLabel"
+        app:layout_constraintBottom_toTopOf="@+id/selectCategory_HorizontalGuideLine_6"
+        app:layout_constraintEnd_toStartOf="@+id/selectCategory_VerticalGuideLine_1"
+        app:layout_constraintStart_toStartOf="@+id/selectCategory_VerticalGuideLine_2"
+        app:layout_constraintTop_toTopOf="@+id/selectCategory_HorizontalGuideLine_7" />
+
+    <Button
+        android:id="@+id/selectCategory_btn_moneyBorrowedCategory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/selectCategory_btn_moneyBorrowedCategoryLabel"
+        app:layout_constraintBottom_toTopOf="@+id/selectCategory_HorizontalGuideLine_6"
+        app:layout_constraintEnd_toStartOf="@+id/selectCategory_VerticalGuideLine_3"
+        app:layout_constraintStart_toStartOf="@+id/selectCategory_VerticalGuideLine_1"
+        app:layout_constraintTop_toTopOf="@+id/selectCategory_HorizontalGuideLine_7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectCategory_VerticalGuideLine_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectCategory_VerticalGuideLine_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectCategory_VerticalGuideLine_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectCategory_VerticalGuideLine_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectCategory_VerticalGuideLine_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.57" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectCategory_VerticalGuideLine_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/selectCategory_floatbtn_addCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="@color/cyan"
+        app:layout_constraintBottom_toTopOf="@+id/selectCategory_HorizontalGuideLine_5"
+        app:layout_constraintEnd_toStartOf="@+id/selectCategory_VerticalGuideLine_8"
+        app:layout_constraintStart_toStartOf="@+id/selectCategory_VerticalGuideLine_7"
+        app:layout_constraintTop_toTopOf="@+id/selectCategory_HorizontalGuideLine_3"
+        app:srcCompat="@drawable/project_add_new_project" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/selectCategory_floatbtn_deleteCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/selectCategory_HorizontalGuideLine_5"
+        app:layout_constraintEnd_toStartOf="@+id/selectCategory_VerticalGuideLine_4"
+        app:layout_constraintStart_toStartOf="@+id/selectCategory_VerticalGuideLine_9"
+        app:layout_constraintTop_toTopOf="@+id/selectCategory_HorizontalGuideLine_3"
+        app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/selectCategory_floatbtn_updateCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:backgroundTint="@color/new_yellow"
+        app:layout_constraintBottom_toTopOf="@+id/selectCategory_HorizontalGuideLine_5"
+        app:layout_constraintEnd_toStartOf="@+id/selectCategory_VerticalGuideLine_6"
+        app:layout_constraintStart_toStartOf="@+id/selectCategory_VerticalGuideLine_5"
+        app:layout_constraintTop_toTopOf="@+id/selectCategory_HorizontalGuideLine_3"
+        app:srcCompat="@drawable/ic_baseline_edit_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

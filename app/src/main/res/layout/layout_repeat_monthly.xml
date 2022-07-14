@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/repeatMonthly_layout"
+    style="@style/LayoutTheme_level_2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/monthlyRepeat_VerticalGuideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/monthlyRepeat_VerticalGuideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/monthlyRepeat_VerticalGuideline_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/monthlyRepeat_VerticalGuideline_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/monthlyRepeat_VerticalGuideline_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/monthlyRepeat_VerticalGuideline_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/monthlyRepeat_VerticalGuideline_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.54" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/monthlyRepeat_VerticalGuideline_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/monthlyRepeat_HorizontalGuideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/monthlyRepeat_HorizontalGuideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="60dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/monthlyRepeat_HorizontalGuideline_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="114dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/monthlyRepeat_HorizontalGuideline_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="124dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/monthlyRepeat_HorizontalGuideline_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="168dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/monthlyRepeat_HorizontalGuideline_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="235dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/monthlyRepeat_HorizontalGuideline_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="247dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/monthlyRepeat_HorizontalGuideline_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="70dp" />
+
+    <TextView
+        android:id="@+id/repeatMonthly_tv_repeatByDate"
+        style="@style/TextViewThemeLeftBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/repeatMonthly_tv_repeatByDateLabel"
+        app:layout_constraintBottom_toTopOf="@+id/monthlyRepeat_HorizontalGuideline_2"
+        app:layout_constraintEnd_toStartOf="@+id/monthlyRepeat_VerticalGuideline_2"
+        app:layout_constraintStart_toStartOf="@+id/monthlyRepeat_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/monthlyRepeat_HorizontalGuideline_1" />
+
+    <EditText
+        android:id="@+id/repeatMonthly_edt_repeatMonthNumber"
+        style="@style/EditTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintBottom_toTopOf="@+id/monthlyRepeat_HorizontalGuideline_2"
+        app:layout_constraintEnd_toStartOf="@+id/monthlyRepeat_VerticalGuideline_3"
+        app:layout_constraintStart_toStartOf="@+id/monthlyRepeat_VerticalGuideline_5"
+        app:layout_constraintTop_toTopOf="@+id/monthlyRepeat_HorizontalGuideline_1" />
+
+    <TextView
+        android:id="@+id/repeatMonthly_tv_repeatAfter"
+        style="@style/TextViewThemeLeftBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/repeatMonthly_tv_repeatAfterLabel"
+        app:layout_constraintBottom_toTopOf="@+id/monthlyRepeat_HorizontalGuideline_2"
+        app:layout_constraintEnd_toStartOf="@+id/monthlyRepeat_VerticalGuideline_4"
+        app:layout_constraintStart_toStartOf="@+id/monthlyRepeat_VerticalGuideline_3"
+        app:layout_constraintTop_toTopOf="@+id/monthlyRepeat_HorizontalGuideline_1" />
+
+    <RadioButton
+        android:id="@+id/repeatMonthly_rBtn_repeatByDate"
+        style="@style/RadioButtonTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/repeatMonthly_rBtn_repeatByDateLabel"
+        app:layout_constraintBottom_toTopOf="@+id/monthlyRepeat_HorizontalGuideline_3"
+        app:layout_constraintEnd_toStartOf="@+id/monthlyRepeat_VerticalGuideline_7"
+        app:layout_constraintStart_toStartOf="@+id/monthlyRepeat_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/monthlyRepeat_HorizontalGuideline_8" />
+
+    <EditText
+        android:id="@+id/repeatMonthly_edt_repeatDayOfMonth"
+        style="@style/EditTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintBottom_toTopOf="@+id/monthlyRepeat_HorizontalGuideline_3"
+        app:layout_constraintEnd_toStartOf="@+id/monthlyRepeat_VerticalGuideline_4"
+        app:layout_constraintStart_toStartOf="@+id/monthlyRepeat_VerticalGuideline_3"
+        app:layout_constraintTop_toTopOf="@+id/monthlyRepeat_HorizontalGuideline_8" />
+
+    <RadioButton
+        android:id="@+id/repeatMonthly_rBtn_repeatByDay"
+        style="@style/RadioButtonTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/repeatMonthly_rBtn_repeatByDayLabel"
+        app:layout_constraintBottom_toTopOf="@+id/monthlyRepeat_HorizontalGuideline_5"
+        app:layout_constraintEnd_toStartOf="@+id/monthlyRepeat_VerticalGuideline_8"
+        app:layout_constraintStart_toStartOf="@+id/monthlyRepeat_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/monthlyRepeat_HorizontalGuideline_4" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/repeatMonthly_til_number"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/monthlyRepeat_HorizontalGuideline_6"
+        app:layout_constraintEnd_toStartOf="@+id/monthlyRepeat_VerticalGuideline_6"
+        app:layout_constraintStart_toStartOf="@+id/monthlyRepeat_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/monthlyRepeat_HorizontalGuideline_5">
+
+        <AutoCompleteTextView
+            android:id="@+id/repeatMonthly_aEdt_dayNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            android:text="@string/repeatMonthly_dayNumberDefault" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/repeatMonthly_til_day"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/monthlyRepeat_HorizontalGuideline_6"
+        app:layout_constraintEnd_toStartOf="@+id/monthlyRepeat_VerticalGuideline_4"
+        app:layout_constraintStart_toStartOf="@+id/monthlyRepeat_VerticalGuideline_6"
+        app:layout_constraintTop_toTopOf="@+id/monthlyRepeat_HorizontalGuideline_5">
+
+        <AutoCompleteTextView
+            android:id="@+id/repeatMonthly_aEdt_day"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            android:text="@string/repeatMonthly_dayDefault" />
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

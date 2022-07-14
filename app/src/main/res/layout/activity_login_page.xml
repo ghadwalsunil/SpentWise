@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginPageLayout"
+    style="@style/LayoutTheme_level_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginPageActivity">
+
+    <TextView
+        android:id="@+id/loginPage_tv_title"
+        style="@style/TextViewThemeCenterBlackBold"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/loginPage_HorizontalActivity_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/loginPage_HorizontalActivity_1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginPage_HorizontalActivity_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginPage_HorizontalActivity_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginPage_HorizontalActivity_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginPage_HorizontalActivity_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginPage_HorizontalActivity_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginPage_HorizontalActivity_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginPage_HorizontalActivity_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginPage_HorizontalActivity_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginPage_HorizontalActivity_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.76" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginPage_VerticalActivity_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginPage_VerticalActivity_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <TextView
+        android:id="@+id/loginPage_tv_titleDesc"
+        style="@style/TextViewThemeCenterBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/loginPage_tv_titleDescLabel"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/loginPage_HorizontalActivity_3"
+        app:layout_constraintEnd_toStartOf="@+id/loginPage_VerticalActivity_2"
+        app:layout_constraintStart_toStartOf="@+id/loginPage_VerticalActivity_1"
+        app:layout_constraintTop_toTopOf="@+id/loginPage_HorizontalActivity_2" />
+
+    <EditText
+        android:id="@+id/loginPage_edt_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/util_textbox_background"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:elevation="2dp"
+        android:ems="10"
+        android:hint="@string/loginPage_edt_emailHintLabel"
+        android:inputType="textEmailAddress"
+        android:maxLength="250"
+        android:padding="20dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/loginPage_HorizontalActivity_5"
+        app:layout_constraintEnd_toStartOf="@+id/loginPage_VerticalActivity_2"
+        app:layout_constraintStart_toStartOf="@+id/loginPage_VerticalActivity_1"
+        app:layout_constraintTop_toTopOf="@+id/loginPage_HorizontalActivity_4" />
+
+    <EditText
+        android:id="@+id/loginPage_edt_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/util_textbox_background"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:elevation="2dp"
+        android:ems="10"
+        android:hint="@string/loginPage_edt_passwordHintLabel"
+        android:inputType="textPassword"
+        android:maxLength="50"
+        android:padding="20dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/loginPage_HorizontalActivity_6"
+        app:layout_constraintEnd_toStartOf="@+id/loginPage_VerticalActivity_2"
+        app:layout_constraintStart_toStartOf="@+id/loginPage_VerticalActivity_1"
+        app:layout_constraintTop_toTopOf="@+id/loginPage_HorizontalActivity_5" />
+
+    <Button
+        android:id="@+id/loginPage_btn_forgotPassword"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginPage_btn_forgotPasswordLabel"
+        android:textColor="@color/sea_green"
+        app:layout_constraintBottom_toTopOf="@+id/loginPage_HorizontalActivity_9"
+        app:layout_constraintEnd_toStartOf="@+id/loginPage_VerticalActivity_2"
+        app:layout_constraintTop_toTopOf="@+id/loginPage_HorizontalActivity_8" />
+
+    <Button
+        android:id="@+id/loginPage_btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginPage_btn_loginLabel"
+        app:layout_constraintBottom_toTopOf="@+id/loginPage_HorizontalActivity_7"
+        app:layout_constraintEnd_toStartOf="@+id/loginPage_VerticalActivity_2"
+        app:layout_constraintStart_toStartOf="@+id/loginPage_VerticalActivity_1"
+        app:layout_constraintTop_toTopOf="@+id/loginPage_HorizontalActivity_6" />
+
+    <Button
+        android:id="@+id/loginPage_btn_registerUser"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginPage_btn_registerUserLabel"
+        android:textColor="@color/sea_green"
+        app:layout_constraintBottom_toTopOf="@+id/loginPage_HorizontalActivity_9"
+        app:layout_constraintStart_toStartOf="@+id/loginPage_VerticalActivity_1"
+        app:layout_constraintTop_toTopOf="@+id/loginPage_HorizontalActivity_8" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

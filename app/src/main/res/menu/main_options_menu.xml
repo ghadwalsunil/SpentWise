@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/optionsMenu_about"
+        android:title="@string/optionsMenu_aboutLabel" />
+    <item
+        android:id="@+id/optionsMenu_help"
+        android:title="@string/optionsMenu_helpLabel" />
+    <item
+        android:id="@+id/optionsMenu_logOut"
+        android:title="@string/optionsMenu_logOutLabel" />
+    <item
+        android:id="@+id/optionsMenu_exit"
+        android:title="@string/optionsMenu_exitLabel" />
+</menu>

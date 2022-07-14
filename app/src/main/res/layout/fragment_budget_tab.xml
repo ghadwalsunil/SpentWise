@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/budgetFragment_scrollview"
+    style="@style/LayoutTheme_level_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/budgetFragment_constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/budgetFragment_tv_budgetNotSet"
+            style="@style/TextViewThemeCenterBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/budgetFragment_tv_budgetNotSetLabel"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/budgetFragment_cardView_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/budgetFragment_cardView_1" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/budgetFragment_cardView_1"
+            style="@style/MyCardViewTheme"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/budgetFragment_constraintLayout_1"
+                style="@style/LayoutTheme_level_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/budgetFragment_tv_title"
+                    style="@style/TextViewThemeCenterBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="@string/budgetFragment_tv_titleLabel"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView_1_budgetFragment_hgl_2"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView_1_budgetFragment_vgl_4"
+                    app:layout_constraintStart_toStartOf="@+id/cardView_1_budgetFragment_vgl_3"
+                    app:layout_constraintTop_toTopOf="@+id/cardView_1_budgetFragment_hgl_1" />
+
+                <TextView
+                    android:id="@+id/budgetFragment_pbar_projectProgress_title"
+                    style="@style/TextViewThemeCenterBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="@string/budgetFragment_pbar_projectProgress_titleLabel"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView_1_budgetFragment_hgl_6"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView_1_budgetFragment_vgl_6"
+                    app:layout_constraintStart_toStartOf="@+id/cardView_1_budgetFragment_vgl_5"
+                    app:layout_constraintTop_toTopOf="@+id/cardView_1_budgetFragment_hgl_4" />
+
+                <TextView
+                    android:id="@+id/budgetFragment_pbar_projectProgress_budget"
+                    style="@style/TextViewThemeCenterBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="@string/budgetFragment_pbar_projectProgress_titleLabel"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView_1_budgetFragment_hgl_7"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView_1_budgetFragment_vgl_6"
+                    app:layout_constraintStart_toStartOf="@+id/cardView_1_budgetFragment_vgl_5"
+                    app:layout_constraintTop_toTopOf="@+id/cardView_1_budgetFragment_hgl_5" />
+
+                <TextView
+                    android:id="@+id/budgetFragment_pbar_projectProgress_current"
+                    style="@style/TextViewThemeCenterBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="@string/budgetFragment_pbar_projectProgress_titleLabel"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView_1_budgetFragment_hgl_5"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView_1_budgetFragment_vgl_6"
+                    app:layout_constraintStart_toStartOf="@+id/cardView_1_budgetFragment_vgl_5"
+                    app:layout_constraintTop_toTopOf="@+id/cardView_1_budgetFragment_hgl_6" />
+
+                <ProgressBar
+                    android:id="@+id/budgetFragment_pbar_projectProgress"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:indeterminateOnly="false"
+                    android:progress="60"
+                    android:progressDrawable="@drawable/util_circle_progress_indicator_good"
+                    android:scaleX="1"
+                    android:scaleY="1"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView_1_budgetFragment_hgl_3"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView_1_budgetFragment_vgl_4"
+                    app:layout_constraintStart_toStartOf="@+id/cardView_1_budgetFragment_vgl_3"
+                    app:layout_constraintTop_toTopOf="@+id/cardView_1_budgetFragment_hgl_2" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_1_budgetFragment_vgl_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.96" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_1_budgetFragment_vgl_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.04" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_1_budgetFragment_vgl_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.2" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_1_budgetFragment_vgl_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.8" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_1_budgetFragment_vgl_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.35" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_1_budgetFragment_vgl_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.65" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_1_budgetFragment_hgl_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="10dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_1_budgetFragment_hgl_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="61dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_1_budgetFragment_hgl_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="298dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_1_budgetFragment_hgl_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="125dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_1_budgetFragment_hgl_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="200dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_1_budgetFragment_hgl_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="164dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_1_budgetFragment_hgl_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="236dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/budgetFragment_cardView_2"
+            style="@style/MyCardViewTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/budgetFragment_cardView_1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/budgetFragment_constraintLayout_2"
+                style="@style/LayoutTheme_level_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/budgetFragment_tv_categoryTitle"
+                    style="@style/TextViewThemeCenterBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="@string/budgetFragment_tv_categoryTitleLabel"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView_2_budgetFragment_hgl_9"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView_2_budgetFragment_vgl_1"
+                    app:layout_constraintStart_toStartOf="@+id/cardView_2_budgetFragment_vgl_2"
+                    app:layout_constraintTop_toTopOf="@+id/cardView_2_budgetFragment_hgl_3" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/budgetFragment_recyclerView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView_2_budgetFragment_vgl_1"
+                    app:layout_constraintStart_toStartOf="@+id/cardView_2_budgetFragment_vgl_2"
+                    app:layout_constraintTop_toTopOf="@+id/cardView_2_budgetFragment_hgl_9" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_2_budgetFragment_vgl_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.96" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_2_budgetFragment_vgl_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.04" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_2_budgetFragment_hgl_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="10dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardView_2_budgetFragment_hgl_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="46dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

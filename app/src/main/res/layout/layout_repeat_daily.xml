@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/repeatDaily_layout"
+    style="@style/LayoutTheme_level_2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/repeatDaily_tv_repeat"
+        style="@style/TextViewThemeCenterBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/repeatDaily_tv_repeatLabel"
+        app:layout_constraintBottom_toTopOf="@+id/repeatDaily_HorizontalGuideline_2"
+        app:layout_constraintEnd_toStartOf="@+id/repeatDaily_edt_repeatInterval"
+        app:layout_constraintStart_toStartOf="@+id/repeatDaily_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/repeatDaily_HorizontalGuideline_1" />
+
+    <EditText
+        android:id="@+id/repeatDaily_edt_repeatInterval"
+        style="@style/EditTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintBottom_toTopOf="@+id/repeatDaily_HorizontalGuideline_2"
+        app:layout_constraintEnd_toStartOf="@+id/repeatDaily_VerticalGuideline_3"
+        app:layout_constraintStart_toStartOf="@+id/repeatDaily_VerticalGuideline_2"
+        app:layout_constraintTop_toTopOf="@+id/repeatDaily_HorizontalGuideline_1" />
+
+    <TextView
+        android:id="@+id/repeatDaily_tv_repeatAfter"
+        style="@style/TextViewThemeLeftBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/repeatDaily_tv_repeatAfterLabel"
+        app:layout_constraintBottom_toTopOf="@+id/repeatDaily_HorizontalGuideline_2"
+        app:layout_constraintEnd_toStartOf="@+id/repeatDaily_VerticalGuideline_4"
+        app:layout_constraintStart_toStartOf="@+id/repeatDaily_VerticalGuideline_3"
+        app:layout_constraintTop_toTopOf="@+id/repeatDaily_HorizontalGuideline_1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/repeatDaily_VerticalGuideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/repeatDaily_VerticalGuideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/repeatDaily_VerticalGuideline_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/repeatDaily_VerticalGuideline_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/repeatDaily_HorizontalGuideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/repeatDaily_HorizontalGuideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="60dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/repeatDaily_HorizontalGuideline_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="76dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

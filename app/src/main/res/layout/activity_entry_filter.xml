@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filterActivity_scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    tools:context=".activities.EntryFilterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/filterActivityLayout"
+        style="@style/LayoutTheme_level_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/entryFilter_include"
+            layout="@layout/layout_toolbar_secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/entryFilter_HorizontalGuideline_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="60dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/entryFilter_VerticalGuideline_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/entryFilter_VerticalGuideline_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <Button
+            android:id="@+id/entryFilter_btn_applyFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/entryFilter_btn_applyFilterLabel"
+            app:layout_constraintStart_toStartOf="@+id/entryFilter_VerticalGuideline_1"
+            app:layout_constraintTop_toTopOf="@+id/entryFilter_HorizontalGuideline_1" />
+
+        <Button
+            android:id="@+id/entryFilter_btn_clearFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/entryFilter_btn_clearFilterLabel"
+            app:layout_constraintEnd_toStartOf="@+id/entryFilter_VerticalGuideline_4"
+            app:layout_constraintTop_toTopOf="@+id/entryFilter_HorizontalGuideline_1" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/filterActivity_cardView_1"
+            style="@style/MyCardViewTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/entryFilter_btn_applyFilter">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/filterActivity_cardView_1_constraintLayout"
+                style="@style/LayoutTheme_level_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_hgl_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="10dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_hgl_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="38dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_hgl_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="100dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_vgl_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.02" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_vgl_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.98" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_vgl_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.35" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_vgl_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.68" />
+
+                <TextView
+                    android:id="@+id/entryFilter_tv_AmountRange"
+                    style="@style/TextViewThemeLeftBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="@string/entryFilter_tv_AmountRangeLabel"
+                    app:layout_constraintBottom_toTopOf="@+id/entryFilter_hgl_2"
+                    app:layout_constraintEnd_toStartOf="@+id/entryFilter_vgl_2"
+                    app:layout_constraintStart_toStartOf="@+id/entryFilter_vgl_1"
+                    app:layout_constraintTop_toTopOf="@+id/entryFilter_hgl_1" />
+
+                <com.google.android.material.slider.RangeSlider
+                    android:id="@+id/entryFilter_sld_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:stepSize="1.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="100.0"
+                    app:layout_constraintBottom_toTopOf="@+id/entryFilter_hgl_3"
+                    app:layout_constraintEnd_toStartOf="@+id/entryFilter_vgl_2"
+                    app:layout_constraintStart_toStartOf="@+id/entryFilter_vgl_1"
+                    app:layout_constraintTop_toTopOf="@+id/entryFilter_hgl_2"
+                    app:values="@array/initial_slider_values" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/entryFilter_til_amountFrom"
+                    style="@style/MyTextInputLayoutTheme"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/entryFilter_tv_AmountRangeFromLabel"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/entryFilter_vgl_3"
+                    app:layout_constraintStart_toStartOf="@+id/entryFilter_vgl_1"
+                    app:layout_constraintTop_toTopOf="@+id/entryFilter_hgl_3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/entryFilter_edt_amountFrom"
+                        style="@style/TextInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/entryFilter_edt_amountFromHintLabel"
+                        android:inputType="number"
+                        android:maxLength="9" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/entryFilter_til_amountTo"
+                    style="@style/MyTextInputLayoutTheme"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/entryFilter_tv_AmountRangeToLabel"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/entryFilter_vgl_4"
+                    app:layout_constraintStart_toStartOf="@+id/entryFilter_vgl_3"
+                    app:layout_constraintTop_toTopOf="@+id/entryFilter_hgl_3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/entryFilter_edt_amountTo"
+                        style="@style/TextInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/entryFilter_edt_amountToHintLabel"
+                        android:inputType="number"
+                        android:maxLength="9" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/entryFilter_btn_updateRange"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/entryFilter_btn_updateRangeLabel"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/entryFilter_vgl_2"
+                    app:layout_constraintStart_toStartOf="@+id/entryFilter_vgl_4"
+                    app:layout_constraintTop_toTopOf="@+id/entryFilter_hgl_3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/filterActivity_cardView_2"
+            style="@style/MyCardViewTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filterActivity_cardView_1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/filterActivity_cardView_2_constraintLayout"
+                style="@style/LayoutTheme_level_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_hgl_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="10dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_hgl_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="38dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_vgl_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.02" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_vgl_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.98" />
+
+                <TextView
+                    android:id="@+id/entryFilter_tv_DateRange"
+                    style="@style/TextViewThemeLeftBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="@string/entryFilter_tv_DateRangeLabel"
+                    app:layout_constraintBottom_toTopOf="@+id/entryFilter_hgl_5"
+                    app:layout_constraintEnd_toStartOf="@+id/entryFilter_vgl_6"
+                    app:layout_constraintStart_toStartOf="@+id/entryFilter_vgl_5"
+                    app:layout_constraintTop_toTopOf="@+id/entryFilter_hgl_4" />
+
+                <Button
+                    android:id="@+id/entryFilter_btn_setDateRange"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/placeHolder"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/entryFilter_vgl_6"
+                    app:layout_constraintStart_toStartOf="@+id/entryFilter_vgl_5"
+                    app:layout_constraintTop_toTopOf="@+id/entryFilter_hgl_5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/filterActivity_cardView_3"
+            style="@style/MyCardViewTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filterActivity_cardView_2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/filterActivity_cardView_3_constraintLayout"
+                style="@style/LayoutTheme_level_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_hgl_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="10dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_hgl_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="38dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_vgl_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.02" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_vgl_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.98" />
+
+                <TextView
+                    android:id="@+id/entryFilter_tv_CategoryFilterHeader"
+                    style="@style/TextViewThemeLeftBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="@string/entryFilter_tv_CategoryFilterHeaderLabel"
+                    app:layout_constraintBottom_toTopOf="@+id/entryFilter_hgl_7"
+                    app:layout_constraintEnd_toStartOf="@+id/entryFilter_vgl_8"
+                    app:layout_constraintStart_toStartOf="@+id/entryFilter_vgl_7"
+                    app:layout_constraintTop_toTopOf="@+id/entryFilter_hgl_6" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/entryFilter_rv_category"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/entryFilter_vgl_8"
+                    app:layout_constraintStart_toStartOf="@+id/entryFilter_vgl_7"
+                    app:layout_constraintTop_toBottomOf="@+id/entryFilter_tv_CategoryFilterHeader" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/filterActivity_cardView_4"
+            style="@style/MyCardViewTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filterActivity_cardView_3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/filterActivity_cardView_4_constraintLayout"
+                style="@style/LayoutTheme_level_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_hgl_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="10dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_hgl_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="38dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_vgl_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.02" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_vgl_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.98" />
+
+                <TextView
+                    android:id="@+id/entryFilter_tv_TransactionModeFilterHeader"
+                    style="@style/TextViewThemeLeftBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="@string/entryFilter_tv_TransactionModeFilterHeaderLabel"
+                    app:layout_constraintBottom_toTopOf="@+id/entryFilter_hgl_9"
+                    app:layout_constraintEnd_toStartOf="@+id/entryFilter_vgl_10"
+                    app:layout_constraintStart_toStartOf="@+id/entryFilter_vgl_9"
+                    app:layout_constraintTop_toTopOf="@+id/entryFilter_hgl_8" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/entryFilter_rv_transactionMode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/entryFilter_vgl_10"
+                    app:layout_constraintStart_toStartOf="@+id/entryFilter_vgl_9"
+                    app:layout_constraintTop_toTopOf="@+id/entryFilter_hgl_9" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/filterActivity_cardView_5"
+            style="@style/MyCardViewTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filterActivity_cardView_4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/filterActivity_cardView_5_constraintLayout"
+                style="@style/LayoutTheme_level_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_hgl_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="10dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_hgl_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="38dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_vgl_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.02" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/entryFilter_vgl_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.98" />
+
+                <TextView
+                    android:id="@+id/entryFilter_tv_TransactionTypeFilterHeader"
+                    style="@style/TextViewThemeLeftBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="@string/entryFilter_tv_TransactionTypeFilterHeaderLabel"
+                    app:layout_constraintBottom_toTopOf="@+id/entryFilter_hgl_11"
+                    app:layout_constraintEnd_toStartOf="@+id/entryFilter_vgl_12"
+                    app:layout_constraintStart_toStartOf="@+id/entryFilter_vgl_11"
+                    app:layout_constraintTop_toTopOf="@+id/entryFilter_hgl_10" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/entryFilter_rv_transactionType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/entryFilter_vgl_12"
+                    app:layout_constraintStart_toStartOf="@+id/entryFilter_vgl_11"
+                    app:layout_constraintTop_toTopOf="@+id/entryFilter_hgl_11" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

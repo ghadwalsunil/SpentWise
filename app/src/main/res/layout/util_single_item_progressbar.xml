@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/utilProgressBar_layout_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/utilProgressBar_cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/utilProgressBar_layout_2"
+            style="@style/LayoutTheme_level_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/utilProgressBar_tv_title"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/placeHolder"
+                android:textColor="@color/app_primary_color"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeMinTextSize="20sp"
+                app:autoSizeStepGranularity="2sp"
+                app:layout_constraintBottom_toTopOf="@+id/utilProgressBar_hgl_2"
+                app:layout_constraintEnd_toStartOf="@+id/utilProgressBar_vgl_2"
+                app:layout_constraintStart_toStartOf="@+id/utilProgressBar_vgl_1"
+                app:layout_constraintTop_toTopOf="@+id/utilProgressBar_hgl_1" />
+
+            <ProgressBar
+                android:id="@+id/utilProgressBar_pBar"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:indeterminateOnly="false"
+                android:progress="60"
+                android:progressDrawable="@drawable/util_circle_progress_indicator_good"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/utilProgressBar_hgl_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="45dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/utilProgressBar_hgl_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="66dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/utilProgressBar_hgl_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="108dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/utilProgressBar_hgl_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="87dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/utilProgressBar_vgl_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/utilProgressBar_vgl_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.75" />
+
+            <TextView
+                android:id="@+id/utilProgressBar_tv_amount"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/placeHolder"
+                android:textColor="@color/app_primary_color"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeMinTextSize="20sp"
+                app:autoSizeStepGranularity="2sp"
+                app:layout_constraintBottom_toTopOf="@+id/utilProgressBar_hgl_4"
+                app:layout_constraintEnd_toStartOf="@+id/utilProgressBar_vgl_2"
+                app:layout_constraintStart_toStartOf="@+id/utilProgressBar_vgl_1"
+                app:layout_constraintTop_toTopOf="@+id/utilProgressBar_hgl_2" />
+
+            <TextView
+                android:id="@+id/utilProgressBar_tv_budget"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/placeHolder"
+                android:textColor="@color/app_primary_color"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeMinTextSize="20sp"
+                app:autoSizeStepGranularity="2sp"
+                app:layout_constraintBottom_toTopOf="@+id/utilProgressBar_hgl_3"
+                app:layout_constraintEnd_toStartOf="@+id/utilProgressBar_vgl_2"
+                app:layout_constraintStart_toStartOf="@+id/utilProgressBar_vgl_1"
+                app:layout_constraintTop_toTopOf="@+id/utilProgressBar_hgl_4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

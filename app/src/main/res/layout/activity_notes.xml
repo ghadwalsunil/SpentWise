@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notes_layout"
+    style="@style/LayoutTheme_level_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NotesActivity">
+
+    <include
+        android:id="@+id/about_include"
+        layout="@layout/layout_toolbar_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/notes_tv_noData"
+        style="@style/TextViewThemeCenterBlackBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/budgetFragment_tv_budgetNotSetLabel"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_include" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/notes_cardView_1"
+        style="@style/MyCardViewTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_include">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/notes_cardView_1_layout"
+            style="@style/LayoutTheme_level_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/notes_cardView_1_hgl_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="10dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/notes_cardView_1_hgl_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="94dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/notes_cardView_1_hgl_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="162dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/notes_cardView_1_hgl_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="35dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/notes_cardView_1_hgl_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="117dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/notes_cardView_1_hgl_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="172dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/notes_cardView_1_vgl_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.3" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/notes_cardView_1_vgl_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.66" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/notes_cardView_1_vgl_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.02" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/notes_cardView_1_vgl_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.98" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/notes_cardView_1_vgl_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.34" />
+
+            <ImageView
+                android:id="@+id/notes_iv_projectIcon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/notes_cardView_1_hgl_2"
+                app:layout_constraintEnd_toStartOf="@+id/notes_cardView_1_vgl_1"
+                app:layout_constraintStart_toStartOf="@+id/notes_cardView_1_vgl_3"
+                app:layout_constraintTop_toTopOf="@+id/notes_cardView_1_hgl_1"
+                app:srcCompat="@drawable/ic_applogo_round" />
+
+            <TextView
+                android:id="@+id/notes_tv_projectName"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/placeHolder"
+                android:textColor="@color/app_primary_color"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/notes_cardView_1_hgl_4"
+                app:layout_constraintEnd_toStartOf="@+id/notes_cardView_1_vgl_4"
+                app:layout_constraintStart_toStartOf="@+id/notes_cardView_1_vgl_1"
+                app:layout_constraintTop_toTopOf="@+id/notes_cardView_1_hgl_1" />
+
+            <TextView
+                android:id="@+id/notes_tv_statusDesc"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="start|center_vertical"
+                android:text="@string/placeHolder"
+                android:textColor="@color/app_primary_color"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/notes_cardView_1_hgl_2"
+                app:layout_constraintEnd_toStartOf="@+id/notes_cardView_1_vgl_4"
+                app:layout_constraintStart_toStartOf="@+id/notes_cardView_1_vgl_1"
+                app:layout_constraintTop_toTopOf="@+id/notes_cardView_1_hgl_4" />
+
+            <TextView
+                android:id="@+id/notes_tv_estimatedTitle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/notes_tv_estimatedTitleLabel"
+                android:textColor="@color/app_primary_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/notes_cardView_1_hgl_5"
+                app:layout_constraintEnd_toStartOf="@+id/notes_cardView_1_vgl_2"
+                app:layout_constraintStart_toStartOf="@+id/notes_cardView_1_vgl_5"
+                app:layout_constraintTop_toTopOf="@+id/notes_cardView_1_hgl_2" />
+
+            <TextView
+                android:id="@+id/notes_tv_budgetTitle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/notes_tv_budgetTitleLabel"
+                android:textColor="@color/app_primary_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/notes_cardView_1_hgl_5"
+                app:layout_constraintEnd_toStartOf="@+id/notes_cardView_1_vgl_4"
+                app:layout_constraintStart_toStartOf="@+id/notes_cardView_1_vgl_2"
+                app:layout_constraintTop_toTopOf="@+id/notes_cardView_1_hgl_2" />
+
+            <TextView
+                android:id="@+id/notes_tv_estimatedValue"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/placeHolder"
+                android:textColor="@color/app_primary_color"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/notes_cardView_1_hgl_3"
+                app:layout_constraintEnd_toStartOf="@+id/notes_cardView_1_vgl_2"
+                app:layout_constraintStart_toStartOf="@+id/notes_cardView_1_vgl_5"
+                app:layout_constraintTop_toTopOf="@+id/notes_cardView_1_hgl_5" />
+
+            <TextView
+                android:id="@+id/notes_tv_budgetValue"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/placeHolder"
+                android:textColor="@color/app_primary_color"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/notes_cardView_1_hgl_3"
+                app:layout_constraintEnd_toStartOf="@+id/notes_cardView_1_vgl_4"
+                app:layout_constraintStart_toStartOf="@+id/notes_cardView_1_vgl_2"
+                app:layout_constraintTop_toTopOf="@+id/notes_cardView_1_hgl_5" />
+
+            <TextView
+                android:id="@+id/notes_tv_spentTitle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/notes_tv_spentTitleLabel"
+                android:textColor="@color/app_primary_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/notes_cardView_1_hgl_5"
+                app:layout_constraintEnd_toStartOf="@+id/notes_cardView_1_vgl_5"
+                app:layout_constraintStart_toStartOf="@+id/notes_cardView_1_vgl_3"
+                app:layout_constraintTop_toTopOf="@+id/notes_cardView_1_hgl_2" />
+
+            <TextView
+                android:id="@+id/notes_tv_spentValue"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/placeHolder"
+                android:textColor="@color/app_primary_color"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/notes_cardView_1_hgl_3"
+                app:layout_constraintEnd_toStartOf="@+id/notes_cardView_1_vgl_5"
+                app:layout_constraintStart_toStartOf="@+id/notes_cardView_1_vgl_3"
+                app:layout_constraintTop_toTopOf="@+id/notes_cardView_1_hgl_5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/notes_cardView_2"
+        style="@style/MyCardViewTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notes_cardView_1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/notes_cardView_2_layout"
+            style="@style/LayoutTheme_level_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/notes_cardView_2_hgl_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="10dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/notes_cardView_2_hgl_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="40dp" />
+
+            <TextView
+                android:id="@+id/notes_tv_categoryWiseBudgetTitle"
+                style="@style/TextViewThemeLeftBlackBold"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/notes_tv_categoryWiseBudgetTitle"
+                app:layout_constraintBottom_toTopOf="@+id/notes_cardView_2_hgl_2"
+                app:layout_constraintEnd_toStartOf="@+id/notes_cardView_2_vgl_2"
+                app:layout_constraintStart_toStartOf="@+id/notes_cardView_2_vgl_1"
+                app:layout_constraintTop_toTopOf="@+id/notes_cardView_2_hgl_1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/notes_rv_categoryRecyclerView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/notes_cardView_2_hgl_2" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/notes_cardView_2_vgl_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.02" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/notes_cardView_2_vgl_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.98" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

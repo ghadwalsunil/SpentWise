@@ -1,0 +1,283 @@
+<resources>
+    <string name="app_name">SpentWise</string>
+    <string name="team_name">Powered by Team Alpha</string>
+    <string name="placeHolder">TextString</string>
+
+    <!--  Activity Titles  -->
+    <string name="categoryImageTitle">Category Images</string>
+    <string name="analyticsActivityTitle">Analytics</string>
+    <string name="entryFilterActivityTitle">Apply Filters</string>
+    <string name="entryRepeatPatternActivityTitle">Set Repeat Pattern</string>
+    <string name="helpActivityTitle">Help</string>
+    <string name="mainActivityTitle">Home</string>
+    <string name="notesActivityTitle">Budget Analysis</string>
+    <string name="manageProjectActivityTitle">Select a Project</string>
+    <string name="projectImageActivityTitle">Project Images</string>
+    <string name="searchEntryActivityTitle">Transaction History</string>
+    <string name="selectCategoryActivityTitle">Select a Category</string>
+    <string name="selectCurrencyActivityTitle">Select a Currency</string>
+    <string name="selectContactActivityTitle">Select a Contact</string>
+
+    <!-- Login Page activity -->
+    <string name="loginPage_tv_titleDescLabel">Your Personal Money Manager</string>
+    <string name="loginPage_edt_emailHintLabel">Email Address</string>
+    <string name="loginPage_edt_passwordHintLabel">Password</string>
+    <string name="loginPage_btn_forgotPasswordLabel">Forgot Password?</string>
+    <string name="loginPage_btn_loginLabel">LOGIN</string>
+    <string name="loginPage_btn_registerUserLabel">NEW USER?</string>
+    <string name="emptyEmailFieldError">Email ID cannot be blank</string>
+    <string name="emptyPasswordFieldError">Password cannot be blank</string>
+    <string name="loginSuccess">User logged in successfully</string>
+    <string name="loginFailure">User log in failed</string>
+    <string name="incorrectCredentialsError">Invalid username and password combination</string>
+
+    <!-- Register User activity -->
+    <string name="registerUser_tv_titleLabel">Register New User</string>
+    <string name="registerUser_edt_firstNameLabel">First Name</string>
+    <string name="registerUser_edt_LastNameLabel">Last Name</string>
+    <string name="registerUser_edt_emailLabel">Email Address</string>
+    <string name="registerUser_edt_passwordLabel">Password</string>
+    <string name="registerUser_edt_confirmPasswordLabel">Confirm Password</string>
+    <string name="registerUser_btn_registerUserLabel">CREATE USER</string>
+    <string name="registerUser_til_securityQuestionLabel">SECURITY QUESTION</string>
+    <string name="registerUser_edt_securityQuestionAnswerLabel">Answer</string>
+
+    <!-- User error messages -->
+    <string name="noAlphabetInNameError">There should be at least 1 alphabet</string>
+    <string name="specialCharacterError">This field can only contain alphabets and spaces</string>
+    <string name="blankFieldError">This field cannot be blank</string>
+    <string name="missingFieldsError">Please provide appropriate values in the above fields</string>
+    <string name="invalidEmailIDError">Please provide a valid email ID</string>
+    <string name="invalidPasswordError">Password must contain minimum 8 characters, with at least 1 letter, 1 number and 1 special character from (#?!@$%^&amp;*-).</string>
+    <string name="passwordNotMatchingError">Passwords don\'t match</string>
+    <string name="securityQuestionAnswerError">This field should only contain alphanumeric characters and spaces</string>
+    <string name="userCreationSuccess">The user was created successfully</string>
+    <string name="userCreationError">User creation failed</string>
+    <string name="emailAlreadyExistsError">A user already exists with this email id</string>
+    <string name="invalidDataError">Invalid Username, Security Question and Answer combination</string>
+    <string name="validDataSuccessMessage">Please Set the new password</string>
+
+    <!-- Forget Password activity -->
+    <string name="forgetPassword_tv_titleLabel">Forget Password</string>
+    <string name="forgetPassword_edt_emailLabel">Email Address</string>
+    <string name="forgetPassword_edt_passwordLabel">New Password</string>
+    <string name="forgetPassword_edt_confirmPasswordLabel">Confirm New Password</string>
+    <string name="forgetPassword_btn_validateLabel">CONFIRM</string>
+    <string name="forgetPassword_btn_updatePasswordLabel">CHANGE PASSWORD</string>
+    <string name="forgetPassword_til_securityQuestionLabel">SECURITY QUESTION</string>
+    <string name="forgetPassword_edt_securityQuestionAnswerLabel">Answer</string>
+    <string name="passwordUpdateSuccess">The password was created successfully</string>
+    <string name="passwordUpdateError">Password update failed</string>
+
+    <!-- Manage Project Activity Labels -->
+    <string name="manageProject_addNewProject">ADD NEW PROJECT</string>
+    <string name="manageProject_btn_updateProjectLabel">EDIT PROJECT</string>
+    <string name="manageProject_btn_deleteProjectLabel">DELETE PROJECT</string>
+    <string name="deleteProjectPopupMessage">Are you sure you want to delete this Project?</string>
+    <string name="deleteProjectConfirmationSuccess">TRANSACTION MODE DELETED SUCCESSFULLY</string>
+    <string name="deleteProjectConfirmationError">TRANSACTION MODE DELETION FAILED</string>
+    <string name="manageProject_tv_descLabel">You can manage multiple projects with different currencies.\nDouble click on an existing project to access it or click on Add button to add a new project</string>
+
+
+    <!-- Add Update Project Activity Labels -->
+    <string name="addUpdateProject_tv_addTitleLabel">CREATE NEW PROJECT</string>
+    <string name="addUpdateProject_tv_updateTitleLabel">UPDATE PROJECT</string>
+    <string name="addUpdateProject_btn_selectCurrencyLabel">SET CURRENCY</string>
+    <string name="addUpdateProject_edt_projectNameHintLabel">PROJECT NAME</string>
+    <string name="addUpdateProject_edt_projectStartAmountHintLabel">STARTING AMOUNT</string>
+    <string name="addUpdateProject_btn_changeImageLabel">CHANGE IMAGE</string>
+    <string name="addUpdateProject_edt_projectBudgetLabel">SET MONTHLY BUDGET</string>
+    <string name="addUpdateProject_btn_saveCategoryButtonLabel">SAVE PROJECT</string>
+    <string name="blankProjectNameError">Project Name cannot be blank</string>
+    <string name="projectNameLengthError">Project Name length cannot be greater than 30</string>
+    <string name="projectNameAlreadyExistsError">Project Name Already Exists</string>
+    <string name="noCurrencySelected">Please select the default Currency</string>
+    <string name="projectSuccess">Project added/updated successfully</string>
+    <string name="projectError">Project add/update failed</string>
+    <string name="addUpdateProject_til_transactionModeHint">ADD TRANSACTION MODES</string>
+    <string name="addUpdateProject_edt_transactionModeHint">TRANSACTION MODE</string>
+    <string name="invalidTransactionModeNameError">INVALID TRANSACTION MODE NAME</string>
+    <string name="duplicateTransactionModeNameError">TRANSACTION MODE ALREADY EXISTS</string>
+    <string name="noTransactionModeNameError">PLEASE SPECIFY AT LEAST ONE TRANSACTION MODE</string>
+    <string name="addTransactionModeSuccess">TRANSACTION MODE ADDED SUCCESSFULLY</string>
+    <string name="addTransactionModeError">TRANSACTION MODE ADDITION FAILED</string>
+    <string name="deleteTransactionModePopupMessage">Are you sure you want to delete this Transaction Mode?</string>
+    <string name="deleteTransactionModeConfirmationSuccess">TRANSACTION MODE DELETED SUCCESSFULLY</string>
+    <string name="deleteTransactionModeConfirmationError">TRANSACTION MODE DELETION FAILED</string>
+    <string name="changeCurrencyWarning">Note: Changing the currency of an existing project will update all the entries in the project</string>
+    <string name="deleteTransactionHint">Click on a transaction mode to delete it</string>
+    <string name="currencyConversionError">Currency Conversion Failed</string>
+
+    <!-- Main Activity Labels -->
+    <string name="main_btn_addNewEntryLabel">ADD NEW ENTRY</string>
+    <string name="main_btn_searchEntryLabel">SEARCH AN ENTRY</string>
+    <string name="optionsMenu_aboutLabel">ABOUT</string>
+    <string name="optionsMenu_helpLabel">HELP</string>
+    <string name="optionsMenu_exitLabel">EXIT</string>
+    <string name="optionsMenu_logOutLabel">LOG OUT</string>
+    <string name="main_navBar_homeLabel">HOME</string>
+    <string name="main_navBar_addLabel">ADD</string>
+    <string name="main_navBar_searchLabel">SEARCH</string>
+    <string name="main_btn_analyticsLabel">ANALYTICS</string>
+    <string name="main_noDataMessage">No Data to show on Graph. Please make an entry to initialize graph.</string>
+    <string name="main_btn_exportDataLabel">EXPORT DATA AS CSV</string>
+    <string name="main_btn_importDataLabel">IMPORT DATA FROM CSV</string>
+    <string name="exportDataSuccess">Data export successful</string>
+    <string name="exportDataFailure">Data export failed</string>
+    <string name="exportDataPermissionDenied">Permission denied save to External storage</string>
+    <string name="main_tv_balanceLabel">Current Balance</string>
+
+    <!-- Select Category Activity Labels -->
+    <string name="selectCategory_btn_selectedCategoryLabel">PROCEED</string>
+    <string name="selectCategory_btn_addCategoryLabel">ADD NEW CATEGORY</string>
+    <string name="selectCategory_btn_updateCategoryLabel">UPDATE CATEGORY</string>
+    <string name="selectCategory_btn_deleteCategoryLabel">DELETE CATEGORY</string>
+    <string name="category_btn_manageCategoriesLabel">MANAGE CATEGORIES</string>
+    <string name="selectCategory_btn_moneyLentCategoryLabel">MONEY LENT</string>
+    <string name="selectCategory_btn_moneyBorrowedCategoryLabel">MONEY BORROWED</string>
+    <string name="deleteCategoryPopupMessage">Are you sure you want to delete this Category?</string>
+    <string name="deleteCategoryConfirmationSuccess">CATEGORY DELETED SUCCESSFULLY</string>
+    <string name="deleteCategoryConfirmationError">CATEGORY DELETION FAILED</string>
+    <string name="blankCategoryNameError">Category Name cannot be blank</string>
+    <string name="duplicateCategoryNameError">Category Name cannot be blank</string>
+    <string name="addCategoryConfirmationSuccess">Category Added Successfully</string>
+    <string name="updateCategoryConfirmationSuccess">Category Updated Successfully</string>
+    <string name="permissionNotGranted">Permission Denied</string>
+    <string name="permissionGranted">Permission Granted</string>
+
+    <!-- Manage Entry Activity Labels -->
+    <string name="addNewEntry_tv_selectedCategoryLabel">SELECTED CATEGORY </string>
+    <string name="addNewEntry_tv_setAmountLabel">ENTER AMOUNT:</string>
+    <string name="addEntry_edt_enterAmountLabel">AMOUNT</string>
+    <string name="addEntry_tv_setDateLabel">DATE:</string>
+    <string name="addEntry_btn_setDateLabel">DATE</string>
+    <string name="addEntry_tv_selectTransactionModeLabel">SELECT TRANSACTION MODE:</string>
+    <string name="addEntry_tv_selectTransactionTypeLabel">SELECT TRANSACTION TYPE:</string>
+    <string name="manageEntry_chkBx_repeatLabel">REPEAT TRANSACTION</string>
+    <string name="manageEntry_btn_repeatLabel">SET REPEAT PATTERN</string>
+    <string name="addEntry_tv_addCommentLabel">Comment:</string>
+    <string name="addEntry_edt_addCommentHintLabel">Enter Comments(Optional)</string>
+    <string name="addEntry_btn_submitEntry">SUBMIT</string>
+    <string name="invalidAmountError">Invalid Amount</string>
+    <string name="dateNotSelectedError">Please Select the date of Transaction</string>
+    <string name="repeatPatternNotSelectedError">Please set the repeat pattern for the entry</string>
+    <string name="entryAdditionConfirmationSuccess">Entry Successfully Added</string>
+    <string name="entryAdditionConfirmationError">Failed to add the entry(s)</string>
+    <string name="newEntryRepeatCountMessage">new entries will be generated with this entry (including this one)</string>
+    <string name="conversionError">Unable to perform currency Conversion</string>
+
+    <!-- Manage Category Activity Labels -->
+    <string name="manageCategory_edt_CategoryNameLabel">CATEGORY NAME</string>
+    <string name="manageCategory_edt_CategoryBudgetLabel">CATEGORY BUDGET</string>
+    <string name="manageCategory_edt_nameValueLabel">ADD NAME</string>
+    <string name="manageCategory_tv_imageTextLabel">CATEGORY IMAGE:</string>
+    <string name="manageCategory_btn_changeImageLabel">CHANGE IMAGE</string>
+    <string name="manageCategory_btn_saveCategoryLabel">SAVE CATEGORY</string>
+
+
+    <!-- Search Entry Activity Labels -->
+    <string name="searchEntry_autoCompleteTv_sortByLabel">SORT BY</string>
+    <string name="searchEntry_autoCompleteTv_sortOrderLabel">SORT ORDER</string>
+    <string-array name="sortByOptionsArray">
+        <item>AMOUNT</item>
+        <item>DATE</item>
+    </string-array>
+    <string-array name="sortOrderOptionsArray">
+        <item>DESCENDING</item>
+        <item>ASCENDING</item>
+    </string-array>
+    <string name="searchEntry_deleteConfirmationMessage">Are you sure you want to delete this Entry with the following amount?</string>
+    <string name="searchEntry_deleteConfirmationSuccess">Entry Deleted Successfully</string>
+    <string name="searchEntry_deleteConfirmationError">Entry Deletion Failed</string>
+
+    <!-- Filter Activity Labels -->
+    <string name="entryFilter_tv_CategoryFilterHeaderLabel">CATEGORY</string>
+    <string name="entryFilter_tv_TransactionModeFilterHeaderLabel">TRANSACTION MODE</string>
+    <string name="entryFilter_tv_TransactionTypeFilterHeaderLabel">TRANSACTION TYPE</string>
+    <string name="entryFilter_btn_applyFilterLabel">APPLY</string>
+    <string name="entryFilter_btn_clearFilterLabel">CLEAR</string>
+    <array name="initial_slider_values">
+        <item>20.0</item>
+        <item>70.0</item>
+    </array>
+    <string name="entryFilter_tv_AmountRangeLabel">AMOUNT RANGE</string>
+    <string name="entryFilter_tv_AmountRangeFromLabel">FROM</string>
+    <string name="entryFilter_tv_AmountRangeToLabel">TO</string>
+    <string name="entryFilter_edt_amountFromHintLabel">FROM</string>
+    <string name="entryFilter_edt_amountToHintLabel">TO</string>
+    <string name="entryFilter_btn_updateRangeLabel">SET RANGE</string>
+    <string name="entryFilter_tv_DateRangeLabel">DATE RANGE</string>
+
+    <!-- Entry Repeat Pattern-->
+    <string name="repeatDaily_tv_repeatLabel">REPEAT EVERY</string>
+    <string name="repeatDaily_tv_repeatAfterLabel">DAY(s)</string>
+    <string name="entryRepeatPattern_rBtn_repeatEndByDateLabel">END BY</string>
+    <string name="entryRepeatPattern_rBtn_repeatEndAfterTimesLabel">END AFTER</string>
+    <string name="entryRepeatPattern_btn_setEndByDateLabel">DATE</string>
+    <string name="entryRepeatPattern_tv_endAfterEntriesLabel">ENTRIES</string>
+    <string name="entryRepeatPattern_til_HintLabel">REPEAT PATTERN</string>
+    <string name="entryRepeatPattern_atv_Default">DAILY</string>
+    <string name="entryRepeatPattern_btn_savePatternLabel">SAVE</string>
+    <string name="entryRepeatPattern_btn_cancelLabel">CANCEL</string>
+    <string name="weeklyRepeat_tv_repeatLabel">REPEAT EVERY</string>
+    <string name="repeatWeekly_tv_repeatAfterLabel">WEEK(s)</string>
+    <string name="weeklyRepeat_chk_day0Label">SUNDAY</string>
+    <string name="weeklyRepeat_chk_day1Label">MONDAY</string>
+    <string name="weeklyRepeat_chk_day2Label">TUESDAY</string>
+    <string name="weeklyRepeat_chk_day3Label">WEDNESDAY</string>
+    <string name="weeklyRepeat_chk_day4Label">THURSDAY</string>
+    <string name="weeklyRepeat_chk_day5Label">FRIDAY</string>
+    <string name="weeklyRepeat_chk_day6Label">SATURDAY</string>
+    <string name="repeatMonthly_rBtn_repeatByDateLabel">REPEAT ON DAY</string>
+    <string name="repeatMonthly_tv_repeatByDateLabel">REPEAT EVERY</string>
+    <string name="repeatMonthly_tv_repeatAfterLabel">MONTH(s)</string>
+    <string name="repeatMonthly_rBtn_repeatByDayLabel">REPEAT ON</string>
+
+    <string name="repeatMonthly_dayNumberDefault">FIRST</string>
+
+    <string name="repeatMonthly_dayDefault">SUNDAY</string>
+    <string-array name="rangeSliderValues">
+        <item>20</item>
+        <item>70</item>
+    </string-array>
+
+    <!-- Analytics Activity Labels -->
+    <string name="budgetFragment_tv_titleLabel">Monthly Budget Status</string>
+    <string name="budgetFragment_pbar_projectProgress_titleLabel">Overall</string>
+    <string name="budgetFragment_tv_categoryTitleLabel">Monthly Category Budget Status</string>
+    <string name="budgetFragment_tv_budgetNotSetLabel">Please set the budget at project level or category level to populate data in this tab</string>
+    <string name="pieChartFragment_titleLabel">Monthly Category Wise Distribution</string>
+    <string name="pieChartFragment_btn_debitLabel">Expense</string>
+    <string name="pieChartFragment_btn_creditLabel">Income</string>
+    <string name="pieChartFragment_til_monthLabel">Month</string>
+    <string name="statsFragment_tv_titleLabel">Statistics</string>
+    <string name="statsFragment_btn_dateRangeLabel">Date Range</string>
+    <string name="statsFragment_tv_dailyAvgLabel">Average Daily</string>
+    <string name="statsFragment_tv_weeklyAvgLabel">Average Weekly</string>
+    <string name="statsFragment_tv_monthlyAvgLabel">Average Monthly</string>
+    <string name="statsFragment_tv_incomeTitleLabel">Income</string>
+    <string name="statsFragment_tv_expenseTitleLabel">Expense</string>
+
+    <!-- Fragment activities -->
+    <string name="analytics_tab_budgetLabel">Budget</string>
+    <string name="analytics_tab_pieChartLabel">Category Spread</string>
+    <string name="analytics_tab_statsLabel">Statistics</string>
+
+    <!-- Help Activity  -->
+    <string name="help_tv_textLabel1">Welcome to the help section of SpentWise</string>
+    <string name="help_tv_textLabel2">We have provided the answers to FAQs and a brief guideline to use the app. Please scroll down to find your related question.</string>
+    <!-- About Activity  -->
+    <string name="about_tv_titleLabel">About Us</string>
+    <string name="about_tv_about_1_Label">Manage Money Effortlessly!</string>
+    <string name="about_tv_about_2_Label">SpentWise is your personal money manager. It is a free money tracking app to plan your budget, manage your expenses, and optimize your finance accordingly.</string>
+    <string name="about_tv_about_3_Label">This application is developed by <b>Team Alpha</b> from the Otto von Guericke University in Magdeburg.</string>
+    <string name="about_tv_about_4_Label">We love to get feedback from our users. You can contact us for any queries at: \n\n<b>TeamAlphaSpentWise@gmail.com</b></string>
+
+    <!-- Notes Activity -->
+    <string name="notes_tv_estimatedTitleLabel">Estimated</string>
+    <string name="notes_tv_budgetTitleLabel">Budget</string>
+    <string name="notes_tv_spentTitleLabel">Spent</string>
+    <string name="notes_tv_categoryWiseBudgetTitle">Category Wise Budget Status</string>
+
+
+</resources>

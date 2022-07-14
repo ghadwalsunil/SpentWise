@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/manageCategoryLayout"
+    style="@style/LayoutTheme_level_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CategoryManageActivity">
+
+    <include
+        android:id="@+id/categoryManage_include"
+        layout="@layout/layout_toolbar_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/CategoryManage_HorizontalGuideLine_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/CategoryManage_VerticalGuideLine_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/CategoryManage_VerticalGuideLine_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/CategoryManage_VerticalGuideLine_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/CategoryManage_VerticalGuideLine_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/CategoryManage_VerticalGuideLine_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/CategoryManage_HorizontalGuideLine_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.19" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/CategoryManage_HorizontalGuideLine_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/CategoryManage_HorizontalGuideLine_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.64" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/CategoryManage_HorizontalGuideLine_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/CategoryManage_HorizontalGuideLine_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.89" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/CategoryManage_HorizontalGuideLine_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.29" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/CategoryManage_HorizontalGuideLine_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <TextView
+        android:id="@+id/manageCategory_tv_imageText"
+        style="@style/TextViewThemeLeftBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/manageCategory_tv_imageTextLabel"
+        app:layout_constraintBottom_toTopOf="@+id/CategoryManage_HorizontalGuideLine_4"
+        app:layout_constraintEnd_toStartOf="@+id/CategoryManage_VerticalGuideLine_1"
+        app:layout_constraintStart_toStartOf="@+id/CategoryManage_VerticalGuideLine_4"
+        app:layout_constraintTop_toTopOf="@+id/CategoryManage_HorizontalGuideLine_9" />
+
+    <ImageView
+        android:id="@+id/manageCategory_iv_image"
+        style="@style/MyImageViewTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/CategoryManage_HorizontalGuideLine_5"
+        app:layout_constraintEnd_toStartOf="@+id/CategoryManage_VerticalGuideLine_3"
+        app:layout_constraintStart_toStartOf="@+id/CategoryManage_VerticalGuideLine_2"
+        app:layout_constraintTop_toTopOf="@+id/CategoryManage_HorizontalGuideLine_4"
+        app:srcCompat="@drawable/ic_baseline_category_24" />
+
+    <Button
+        android:id="@+id/manageCategory_btn_changeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/manageCategory_btn_changeImageLabel"
+        app:layout_constraintBottom_toTopOf="@+id/CategoryManage_HorizontalGuideLine_6"
+        app:layout_constraintEnd_toStartOf="@+id/CategoryManage_VerticalGuideLine_3"
+        app:layout_constraintStart_toStartOf="@+id/CategoryManage_VerticalGuideLine_2"
+        app:layout_constraintTop_toBottomOf="@+id/manageCategory_iv_image" />
+
+    <Button
+        android:id="@+id/manageCategory_btn_saveCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/manageCategory_btn_saveCategoryLabel"
+        app:layout_constraintBottom_toTopOf="@+id/CategoryManage_HorizontalGuideLine_7"
+        app:layout_constraintEnd_toStartOf="@+id/CategoryManage_VerticalGuideLine_3"
+        app:layout_constraintStart_toStartOf="@+id/CategoryManage_VerticalGuideLine_2"
+        app:layout_constraintTop_toTopOf="@+id/CategoryManage_HorizontalGuideLine_6" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/categoryManage_til_categoryName"
+        style="@style/MyTextInputLayoutTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/manageCategory_edt_CategoryNameLabel"
+        app:layout_constraintBottom_toTopOf="@+id/CategoryManage_HorizontalGuideLine_3"
+        app:layout_constraintEnd_toStartOf="@+id/CategoryManage_VerticalGuideLine_5"
+        app:layout_constraintStart_toStartOf="@+id/CategoryManage_VerticalGuideLine_4"
+        app:layout_constraintTop_toTopOf="@+id/CategoryManage_HorizontalGuideLine_2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/categoryManage_edt_categoryName"
+            style="@style/TextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/manageCategory_edt_CategoryNameLabel"
+            android:inputType="text"
+            android:maxLength="30" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/categoryManage_til_categoryBudget"
+        style="@style/MyTextInputLayoutTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/manageCategory_edt_CategoryBudgetLabel"
+        app:layout_constraintBottom_toTopOf="@+id/CategoryManage_HorizontalGuideLine_8"
+        app:layout_constraintEnd_toStartOf="@+id/CategoryManage_VerticalGuideLine_5"
+        app:layout_constraintStart_toStartOf="@+id/CategoryManage_VerticalGuideLine_4"
+        app:layout_constraintTop_toTopOf="@+id/CategoryManage_HorizontalGuideLine_3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/categoryManage_edt_categoryBudget"
+            style="@style/TextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/manageCategory_edt_CategoryBudgetLabel"
+            android:inputType="number"
+            android:maxLength="9" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

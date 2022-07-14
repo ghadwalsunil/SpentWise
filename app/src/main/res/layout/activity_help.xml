@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/help_layout"
+    style="@style/LayoutTheme_level_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HelpActivity">
+
+    <include
+        android:id="@+id/help_include"
+        layout="@layout/layout_toolbar_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/help_vgl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/help_vgl_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/help_hgl_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/help_hgl_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/help_hgl_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <TextView
+        android:id="@+id/help_tv_welcome"
+        style="@style/TextViewThemeCenterBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/help_tv_textLabel1"
+        app:layout_constraintBottom_toTopOf="@+id/help_hgl_5"
+        app:layout_constraintEnd_toStartOf="@+id/help_vgl_2"
+        app:layout_constraintStart_toStartOf="@+id/help_vgl_1"
+        app:layout_constraintTop_toTopOf="@+id/help_hgl_3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/help_recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/help_hgl_4" />
+
+    <TextView
+        android:id="@+id/help_tv_welcome_1"
+        style="@style/TextViewThemeCenterBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/help_tv_textLabel2"
+        app:layout_constraintBottom_toTopOf="@+id/help_hgl_4"
+        app:layout_constraintEnd_toStartOf="@+id/help_vgl_2"
+        app:layout_constraintStart_toStartOf="@+id/help_vgl_1"
+        app:layout_constraintTop_toTopOf="@+id/help_hgl_5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

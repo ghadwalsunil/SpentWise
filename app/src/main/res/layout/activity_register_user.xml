@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerUserActivity_scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    tools:context=".activities.RegisterUserActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/registerUserLayout"
+        style="@style/LayoutTheme_level_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/registerUser_tv_title"
+            style="@style/TextViewThemeCenterBlackBold"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/registerUser_tv_titleLabel"
+            app:layout_constraintBottom_toTopOf="@+id/registerUser_HorizontalGuideline_2"
+            app:layout_constraintEnd_toStartOf="@+id/registerUser_VerticalGuideline_2"
+            app:layout_constraintStart_toStartOf="@+id/registerUser_VerticalGuideline_1"
+            app:layout_constraintTop_toTopOf="@+id/registerUser_HorizontalGuideline_1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/registerUser_HorizontalGuideline_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/registerUser_HorizontalGuideline_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.08" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/registerUser_HorizontalGuideline_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <EditText
+            android:id="@+id/registerUser_edt_firstName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/util_textbox_background"
+            android:elevation="4dp"
+            android:hint="@string/registerUser_edt_firstNameLabel"
+            android:inputType="textPersonName"
+            android:maxLength="50"
+            android:padding="15dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/registerUser_VerticalGuideline_2"
+            app:layout_constraintStart_toStartOf="@+id/registerUser_VerticalGuideline_1"
+            app:layout_constraintTop_toTopOf="@+id/registerUser_HorizontalGuideline_3" />
+
+        <EditText
+            android:id="@+id/registerUser_edt_lastName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/util_textbox_background"
+            android:elevation="4dp"
+            android:hint="@string/registerUser_edt_LastNameLabel"
+            android:inputType="textPersonName"
+            android:maxLength="50"
+            android:padding="15dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/registerUser_VerticalGuideline_2"
+            app:layout_constraintStart_toStartOf="@+id/registerUser_VerticalGuideline_1"
+            app:layout_constraintTop_toBottomOf="@+id/registerUser_tv_firstNameError" />
+
+        <EditText
+            android:id="@+id/registerUser_edt_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/util_textbox_background"
+            android:elevation="4dp"
+            android:hint="@string/registerUser_edt_emailLabel"
+            android:inputType="textEmailAddress"
+            android:maxLength="250"
+            android:padding="15dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/registerUser_VerticalGuideline_2"
+            app:layout_constraintStart_toStartOf="@+id/registerUser_VerticalGuideline_1"
+            app:layout_constraintTop_toBottomOf="@+id/registerUser_tv_lastNameError" />
+
+        <EditText
+            android:id="@+id/registerUser_edt_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/util_textbox_background"
+            android:elevation="4dp"
+            android:hint="@string/registerUser_edt_passwordLabel"
+            android:inputType="textPassword"
+            android:maxLength="50"
+            android:padding="15dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/registerUser_VerticalGuideline_2"
+            app:layout_constraintStart_toStartOf="@+id/registerUser_VerticalGuideline_1"
+            app:layout_constraintTop_toBottomOf="@+id/registerUser_tv_emailError" />
+
+        <EditText
+            android:id="@+id/registerUser_edt_confirmPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/util_textbox_background"
+            android:elevation="4dp"
+            android:hint="@string/registerUser_edt_confirmPasswordLabel"
+            android:inputType="textPassword"
+            android:maxLength="50"
+            android:padding="15dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/registerUser_VerticalGuideline_2"
+            app:layout_constraintStart_toStartOf="@+id/registerUser_VerticalGuideline_1"
+            app:layout_constraintTop_toBottomOf="@+id/registerUser_tv_passwordError" />
+
+        <EditText
+            android:id="@+id/registerUser_edt_securityQuestionAnswer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/util_textbox_background"
+            android:elevation="4dp"
+            android:hint="@string/registerUser_edt_securityQuestionAnswerLabel"
+            android:inputType="text"
+            android:maxLength="50"
+            android:padding="15dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/registerUser_VerticalGuideline_2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/registerUser_VerticalGuideline_1"
+            app:layout_constraintTop_toBottomOf="@+id/registerUser_tv_secQuestionError" />
+
+        <Button
+            android:id="@+id/registerUser_btn_registerUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/registerUser_btn_registerUserLabel"
+            app:layout_constraintEnd_toStartOf="@+id/registerUser_VerticalGuideline_2"
+            app:layout_constraintStart_toStartOf="@+id/registerUser_VerticalGuideline_1"
+            app:layout_constraintTop_toBottomOf="@+id/registerUser_tv_secAnswerError" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerUser_til_securityQuestion"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:hint="@string/registerUser_til_securityQuestionLabel"
+            app:expandedHintEnabled="false"
+            app:layout_constraintEnd_toStartOf="@+id/registerUser_VerticalGuideline_2"
+            app:layout_constraintStart_toStartOf="@+id/registerUser_VerticalGuideline_1"
+            app:layout_constraintTop_toBottomOf="@+id/registerUser_tv_confirmPasswordError">
+
+            <AutoCompleteTextView
+                android:id="@+id/registerUser_atv_securityQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/registerUser_VerticalGuideline_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/registerUser_VerticalGuideline_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <TextView
+            android:id="@+id/registerUser_tv_firstNameError"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            app:layout_constraintEnd_toStartOf="@+id/registerUser_VerticalGuideline_2"
+            app:layout_constraintStart_toStartOf="@+id/registerUser_VerticalGuideline_1"
+            app:layout_constraintTop_toBottomOf="@+id/registerUser_edt_firstName" />
+
+        <TextView
+            android:id="@+id/registerUser_tv_lastNameError"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            app:layout_constraintEnd_toStartOf="@+id/registerUser_VerticalGuideline_2"
+            app:layout_constraintStart_toStartOf="@+id/registerUser_VerticalGuideline_1"
+            app:layout_constraintTop_toBottomOf="@+id/registerUser_edt_lastName" />
+
+        <TextView
+            android:id="@+id/registerUser_tv_emailError"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            app:layout_constraintEnd_toStartOf="@+id/registerUser_VerticalGuideline_2"
+            app:layout_constraintStart_toStartOf="@+id/registerUser_VerticalGuideline_1"
+            app:layout_constraintTop_toBottomOf="@+id/registerUser_edt_email" />
+
+        <TextView
+            android:id="@+id/registerUser_tv_passwordError"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            app:layout_constraintEnd_toStartOf="@+id/registerUser_VerticalGuideline_2"
+            app:layout_constraintStart_toStartOf="@+id/registerUser_VerticalGuideline_1"
+            app:layout_constraintTop_toBottomOf="@+id/registerUser_edt_password" />
+
+        <TextView
+            android:id="@+id/registerUser_tv_confirmPasswordError"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            app:layout_constraintEnd_toStartOf="@+id/registerUser_VerticalGuideline_2"
+            app:layout_constraintStart_toStartOf="@+id/registerUser_VerticalGuideline_1"
+            app:layout_constraintTop_toBottomOf="@+id/registerUser_edt_confirmPassword" />
+
+        <TextView
+            android:id="@+id/registerUser_tv_secAnswerError"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            app:layout_constraintEnd_toStartOf="@+id/registerUser_VerticalGuideline_2"
+            app:layout_constraintStart_toStartOf="@+id/registerUser_VerticalGuideline_1"
+            app:layout_constraintTop_toBottomOf="@+id/registerUser_edt_securityQuestionAnswer" />
+
+        <TextView
+            android:id="@+id/registerUser_tv_secQuestionError"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            app:layout_constraintEnd_toStartOf="@+id/registerUser_VerticalGuideline_2"
+            app:layout_constraintStart_toStartOf="@+id/registerUser_VerticalGuideline_1"
+            app:layout_constraintTop_toBottomOf="@+id/registerUser_til_securityQuestion" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

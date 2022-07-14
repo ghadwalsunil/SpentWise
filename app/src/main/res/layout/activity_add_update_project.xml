@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addUpdateProjectLayout"
+    style="@style/LayoutTheme_level_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddUpdateProject">
+
+    <include
+        android:id="@+id/addUpdateProject_include"
+        layout="@layout/layout_toolbar_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/addUpdateProject_VerticalGuideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/addUpdateProject_VerticalGuideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/addUpdateProject_VerticalGuideline_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.34" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/addUpdateProject_VerticalGuideline_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.76" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/addUpdateProject_HorizontalGuideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/addUpdateProject_HorizontalGuideline_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/addUpdateProject_HorizontalGuideline_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/addUpdateProject_HorizontalGuideline_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/addUpdateProject_HorizontalGuideline_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.61" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/addUpdateProject_HorizontalGuideline_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/addUpdateProject_HorizontalGuideline_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/addUpdateProject_HorizontalGuideline_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/addUpdateProject_HorizontalGuideline_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <Button
+        android:id="@+id/addUpdateProject_btn_selectCurrency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="@string/addUpdateProject_btn_selectCurrencyLabel"
+        app:layout_constraintBottom_toTopOf="@+id/addUpdateProject_HorizontalGuideline_4"
+        app:layout_constraintEnd_toStartOf="@+id/addUpdateProject_VerticalGuideline_3"
+        app:layout_constraintStart_toStartOf="@+id/addUpdateProject_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/addUpdateProject_HorizontalGuideline_3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addUpdateProject_til_projectName"
+        style="@style/MyTextInputLayoutTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/addUpdateProject_edt_projectNameHintLabel"
+        app:layout_constraintBottom_toTopOf="@+id/addUpdateProject_HorizontalGuideline_3"
+        app:layout_constraintEnd_toStartOf="@+id/addUpdateProject_VerticalGuideline_2"
+        app:layout_constraintStart_toStartOf="@+id/addUpdateProject_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/addUpdateProject_HorizontalGuideline_2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addUpdateProject_edt_projectName"
+            style="@style/TextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/addUpdateProject_edt_projectNameHintLabel"
+            android:inputType="text"
+            android:maxLength="30" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addUpdateProject_til_projectStartAmount"
+        style="@style/MyTextInputLayoutTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/addUpdateProject_edt_projectStartAmountHintLabel"
+        app:layout_constraintBottom_toTopOf="@+id/addUpdateProject_HorizontalGuideline_4"
+        app:layout_constraintEnd_toStartOf="@+id/addUpdateProject_VerticalGuideline_2"
+        app:layout_constraintStart_toStartOf="@+id/addUpdateProject_VerticalGuideline_3"
+        app:layout_constraintTop_toTopOf="@+id/addUpdateProject_HorizontalGuideline_3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addUpdateProject_edt_projectStartAmount"
+            style="@style/TextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/addUpdateProject_edt_projectStartAmountHintLabel"
+            android:inputType="number"
+            android:maxLength="9" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/addUpdateProject_iv_projectImage"
+        style="@style/MyImageViewTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/addUpdateProject_HorizontalGuideline_5"
+        app:layout_constraintEnd_toStartOf="@+id/addUpdateProject_VerticalGuideline_2"
+        app:layout_constraintStart_toStartOf="@+id/addUpdateProject_VerticalGuideline_3"
+        app:layout_constraintTop_toTopOf="@+id/addUpdateProject_HorizontalGuideline_8"
+        app:srcCompat="@drawable/ic_baseline_house_24" />
+
+    <Button
+        android:id="@+id/addUpdateProject_btn_changeImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/addUpdateProject_btn_changeImageLabel"
+        app:layout_constraintBottom_toTopOf="@+id/addUpdateProject_HorizontalGuideline_5"
+        app:layout_constraintEnd_toStartOf="@+id/addUpdateProject_VerticalGuideline_3"
+        app:layout_constraintStart_toStartOf="@+id/addUpdateProject_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/addUpdateProject_HorizontalGuideline_8" />
+
+    <Button
+        android:id="@+id/addUpdateProject_btn_saveProjectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addUpdateProject_btn_saveCategoryButtonLabel"
+        app:layout_constraintEnd_toStartOf="@+id/addUpdateProject_VerticalGuideline_2"
+        app:layout_constraintStart_toStartOf="@+id/addUpdateProject_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/addUpdateProject_HorizontalGuideline_11" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addUpdateProject_til_transactionMode"
+        style="@style/MyTextInputLayoutTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/addUpdateProject_til_transactionModeHint"
+        app:layout_constraintBottom_toTopOf="@+id/addUpdateProject_HorizontalGuideline_6"
+        app:layout_constraintEnd_toStartOf="@+id/addUpdateProject_VerticalGuideline_4"
+        app:layout_constraintStart_toStartOf="@+id/addUpdateProject_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/addUpdateProject_HorizontalGuideline_9">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addUpdateProject_edt_transactionMode"
+            style="@style/TextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/addUpdateProject_edt_transactionModeHint"
+            android:inputType="text"
+            android:maxLength="30" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ListView
+        android:id="@+id/addUpdateProject_lv_transactionModes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/addUpdateProject_HorizontalGuideline_10"
+        app:layout_constraintEnd_toStartOf="@+id/addUpdateProject_VerticalGuideline_2"
+        app:layout_constraintStart_toStartOf="@+id/addUpdateProject_VerticalGuideline_1"
+        app:layout_constraintTop_toBottomOf="@+id/addUpdateProject_til_transactionMode" />
+
+    <TextView
+        android:id="@+id/addUpdateProject_tv_changeCurrencyWarning"
+        style="@style/TextViewThemeLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/addUpdateProject_HorizontalGuideline_8"
+        app:layout_constraintEnd_toStartOf="@+id/addUpdateProject_VerticalGuideline_2"
+        app:layout_constraintStart_toStartOf="@+id/addUpdateProject_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/addUpdateProject_HorizontalGuideline_4" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addUpdateProject_til_projectBudget"
+        style="@style/MyTextInputLayoutTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/addUpdateProject_edt_projectBudgetLabel"
+        app:layout_constraintBottom_toTopOf="@+id/addUpdateProject_HorizontalGuideline_9"
+        app:layout_constraintEnd_toStartOf="@+id/addUpdateProject_VerticalGuideline_2"
+        app:layout_constraintStart_toStartOf="@+id/addUpdateProject_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/addUpdateProject_HorizontalGuideline_5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addUpdateProject_edt_projectBudget"
+            style="@style/TextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/addUpdateProject_edt_projectBudgetLabel"
+            android:inputType="number"
+            android:maxLength="9" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/addUpdateProject_btn_addTransactionMode"
+        style="@style/MyImageButtonTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/addUpdateProject_HorizontalGuideline_6"
+        app:layout_constraintEnd_toStartOf="@+id/addUpdateProject_VerticalGuideline_2"
+        app:layout_constraintStart_toStartOf="@+id/addUpdateProject_VerticalGuideline_4"
+        app:layout_constraintTop_toTopOf="@+id/addUpdateProject_HorizontalGuideline_9"
+        app:srcCompat="@drawable/project_add_new_project" />
+
+    <TextView
+        android:id="@+id/addUpdateProject_tv_deleteTransactionHint"
+        style="@style/TextViewThemeLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/deleteTransactionHint"
+        app:layout_constraintBottom_toTopOf="@+id/addUpdateProject_HorizontalGuideline_11"
+        app:layout_constraintEnd_toStartOf="@+id/addUpdateProject_VerticalGuideline_4"
+        app:layout_constraintStart_toStartOf="@+id/addUpdateProject_VerticalGuideline_1"
+        app:layout_constraintTop_toTopOf="@+id/addUpdateProject_HorizontalGuideline_10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
